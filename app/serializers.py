@@ -9,7 +9,7 @@ class BrandFullSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Brand
-        fields = '__all__'
+        fields = tuple([field.name for field in model._meta.fields]) + ('products', 'categories')
         extra_kwargs = {
             'id': {'read_only': True}
         }
@@ -57,7 +57,7 @@ class CategoryFullSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Category
-        fields = '__all__'
+        fields = tuple([field.name for field in model._meta.fields]) + ('products',)
         extra_kwargs = {
             'id': {'read_only': True}
         }
