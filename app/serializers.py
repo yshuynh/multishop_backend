@@ -54,16 +54,21 @@ class CategorySerializer(serializers.ModelSerializer):
 
 class CategoryFullSerializer(serializers.ModelSerializer):
     products = serializers.SerializerMethodField()
+    brands = serializers.SerializerMethodField()
 
     class Meta:
         model = Category
-        fields = tuple([field.name for field in model._meta.fields]) + ('products',)
+        fields = tuple([field.name for field in model._meta.fields]) + ('products', 'brands')
         extra_kwargs = {
             'id': {'read_only': True}
         }
 
     def get_products(self, obj):
         data = obj.products.all().values_list('id', flat=True)
+        return data
+
+    def get_brands(self, obj):
+        data = obj.brands.all().values_list('id', flat=True)
         return data
 
     # def to_representation(self, instance):
