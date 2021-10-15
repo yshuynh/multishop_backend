@@ -17,7 +17,7 @@ class CategoryListAPI(generics.GenericAPIView):
 
 class CategorySingleAPI(generics.GenericAPIView):
     queryset = Category.objects
-    serializer_class = CategoryFullSerializer
+    serializer_class = CategorySerializer
 
     def get(self, request, pk, *arg, **kwargs):
         c_category = self.get_object()
