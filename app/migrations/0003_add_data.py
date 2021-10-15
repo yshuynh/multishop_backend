@@ -28,6 +28,8 @@ def create_data(apps, schema_editor):
                     name=product['brand']
                 )
                 m_brand.save()
+            m_category.brands.add(m_brand)
+            m_category.save()
             m_product = Product.objects.create(
                 name=product['productName'],
                 description=product['productDescription'],
@@ -42,7 +44,7 @@ def create_data(apps, schema_editor):
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('app', '0001_initial'),
+        ('app', '0002_add_many_to_many_category_brand'),
     ]
 
     operations = [

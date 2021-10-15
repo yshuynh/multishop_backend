@@ -60,14 +60,13 @@ class ProductSingleAPI(generics.GenericAPIView):
 class BrandListAPI(generics.GenericAPIView):
     queryset = Brand.objects.all()
     serializer_class = BrandSerializer
-    pagination_class = PageNumberPagination
 
     def get(self, request, *arg, **kwargs):
-        page = self.paginate_queryset(self.get_queryset())
-        if page is not None:
-            serializer = self.get_serializer(page, many=True)
-            return self.get_paginated_response(serializer.data)
-        serializer = self.get_serializer(self.get_queryset(), many=True)
+        category_id = request.query_params.get('category')
+        queryset = self.get_queryset()
+        if category_id is not None:
+            queryset = self.get_queryset().filter(categories=category_id)
+        serializer = self.get_serializer(queryset, many=True)
         return Response(serializer.data)
 
 
