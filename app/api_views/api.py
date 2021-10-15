@@ -3,7 +3,8 @@ from rest_framework.pagination import PageNumberPagination
 from rest_framework.response import Response
 
 from app.models import Category, Product, Brand
-from app.serializers import CategoryFullSerializer, ProductSerializer, CategorySerializer, BrandSerializer
+from app.serializers import CategoryFullSerializer, ProductSerializer, CategorySerializer, BrandSerializer, \
+    BrandFullSerializer
 
 
 class CategoryListAPI(generics.GenericAPIView):
@@ -17,7 +18,7 @@ class CategoryListAPI(generics.GenericAPIView):
 
 class CategorySingleAPI(generics.GenericAPIView):
     queryset = Category.objects
-    serializer_class = CategorySerializer
+    serializer_class = CategoryFullSerializer
 
     def get(self, request, pk, *arg, **kwargs):
         c_category = self.get_object()
@@ -72,7 +73,7 @@ class BrandListAPI(generics.GenericAPIView):
 
 class BrandSingleAPI(generics.GenericAPIView):
     queryset = Brand.objects.all()
-    serializer_class = BrandSerializer
+    serializer_class = BrandFullSerializer
 
     def get(self, request, pk, *arg, **kwargs):
         c_brand = self.get_object()
