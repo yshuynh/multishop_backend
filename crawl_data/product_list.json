@@ -1,0 +1,4815 @@
+[
+  {
+    "productInfo": {
+      "sku": "1702783",
+      "skuId": "1702783",
+      "name": "Laptop HP Pavilion 14-bf016TU (2GE48PA) (14\" FHD/i3-7100U/4GB/1TB HDD/HD 620/Free DOS/1.6 kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/k6LaoZTSi68Atu1eCjTliBR_dCejX--wxPDywbrn7QdVWYHvPIUtZ1-0Ia7qE30RzugvKPPlLUYuv8w_6HFl",
+      "tags": [
+        "Laptop-BTS",
+        "Hp-BTS"
+      ],
+      "brand": {
+        "code": "hp",
+        "name": "HP",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-05",
+          "name": "Laptop Compaq - HP",
+          "id": 30
+        },
+        {
+          "code": "01-N001-05-01",
+          "name": "Laptop Compaq - Hp Option",
+          "id": 31
+        },
+        {
+          "code": "01-N001-05-01-01",
+          "name": "Laptop Compaq - Hp Option 1.1",
+          "id": 32
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 12,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-hp-pavilion-14-bf016tu-2ge48pa-bac",
+      "sellerSku": "1702783",
+      "canonical": "may-tinh-xach-tay-laptop-hp-pavilion-14-bf016tu-2ge48pa-bac-s1702783.html",
+      "uomCode": "57",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [
+      {
+        "id": 106991,
+        "isDefault": false,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": {
+            "percent": 0,
+            "maxAmount": 0,
+            "flat": 800000,
+            "maxAmountPerOrder": null
+          },
+          "gifts": [],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Giảm giá",
+        "endTimestampSec": "1640969999",
+        "name": "Giá Tốt mỗi ngày - 2140",
+        "type": "",
+        "landing": null
+      }
+    ],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "12290000",
+        "terminalPrice": "12290000",
+        "latestPrice": "11490000",
+        "discountAmount": "800000",
+        "discountPercent": 6.51,
+        "sellPrice": "12290000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_trung_bay",
+      "sellable": false
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "1703124",
+      "skuId": "1703124",
+      "name": "Laptop HP Pavilion X360 14-ba063TU (2GV25PA) (14\" HD/i3-7100U/4GB/500GB HDD/HD 620/Win10/1.7 kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/fdBRoCmwAmJQzctZjJR-kHxbpqK-XBe7KEiL8m14iU2-Pc6AGHECNBU3HORWj-SXFom-lQV6NvMS5b4cUG2S",
+      "tags": [
+        "Laptop-BTS",
+        "Hp-BTS"
+      ],
+      "brand": {
+        "code": "hp",
+        "name": "HP",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-05",
+          "name": "Laptop Compaq - HP",
+          "id": 30
+        },
+        {
+          "code": "01-N001-05-02",
+          "name": "Laptop Compaq - Hp Win",
+          "id": 34
+        },
+        {
+          "code": "01-N001-05-02-02",
+          "name": "Laptop Compaq - Hp Win 2.1",
+          "id": 36
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 12,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-hp-pavilion-x360-14-ba063tu-2gv25pa-vang",
+      "sellerSku": "1703124",
+      "canonical": "may-tinh-xach-tay-laptop-hp-pavilion-x360-14-ba063tu-2gv25pa-vang-s1703124.html",
+      "uomCode": "57",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [
+      {
+        "id": 106992,
+        "isDefault": false,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": {
+            "percent": 0,
+            "maxAmount": 0,
+            "flat": 800000,
+            "maxAmountPerOrder": null
+          },
+          "gifts": [],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Giảm giá",
+        "endTimestampSec": "1640969999",
+        "name": "Giá Tốt mỗi ngày - 2139",
+        "type": "",
+        "landing": null
+      },
+      {
+        "id": 106165,
+        "isDefault": true,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": null,
+          "gifts": [
+            {
+              "sku": "1207994",
+              "name": "Túi đựng laptop 15''",
+              "imageUrl": "https://lh3.googleusercontent.com/8TYtx-F0wLPEsufDd-N2y4txkDy3dxxjipjA6k5DjccQhwtdK_6Mx0YPuSUZF3bOEGG5-hP8-MFNReb4X0k",
+              "quantity": 1,
+              "maxQuantityPerOrder": null,
+              "quantityDecimal": 1,
+              "maxQuantityPerOrderDecimal": null
+            }
+          ],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Tặng quà",
+        "endTimestampSec": "1640969999",
+        "name": "[Quà tặng] - Túi đựng laptop 15 [01.21] - 1",
+        "type": "",
+        "landing": null
+      }
+    ],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "13490000",
+        "terminalPrice": "13490000",
+        "latestPrice": "12690000",
+        "discountAmount": "800000",
+        "discountPercent": 5.93,
+        "sellPrice": "13490000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_trung_bay",
+      "sellable": false
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "1704882",
+      "skuId": "1704882",
+      "name": "Laptop Lenovo Ideapad 520s-14IKB (81BL0086VN) (14\" FHD/i5-8250U/4GB/1TB HDD/UHD 620/Win10/1.5 kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/qrHOxtSwRuAz0Cj5j0DLQweX9GmMW03fKjQPzcwe1bpD0VS68S0Ytf7Py04nsww-u1Q7ZGVPW4CJCS-OlzU",
+      "tags": [],
+      "brand": {
+        "code": "lenovo",
+        "name": "Lenovo",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-04",
+          "name": "Laptop Lenovo",
+          "id": 23
+        },
+        {
+          "code": "01-N001-04-02",
+          "name": "Laptop Lenovo Win",
+          "id": 27
+        },
+        {
+          "code": "01-N001-04-02-01",
+          "name": "Laptop Lenovo Win 1.1",
+          "id": 28
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 12,
+        "description": "Bh12"
+      },
+      "slug": "may-tinh-xach-tay-laptop-lenovo-ideapad-520s-14ikb-81bl0086vn-i5-8250u-vang",
+      "sellerSku": "1704882",
+      "canonical": "may-tinh-xach-tay-laptop-lenovo-ideapad-520s-14ikb-81bl0086vn-i5-8250u-vang-s1704882.html",
+      "uomCode": "81",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [
+      {
+        "id": 107023,
+        "isDefault": false,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": {
+            "percent": 0,
+            "maxAmount": 0,
+            "flat": 1000000,
+            "maxAmountPerOrder": null
+          },
+          "gifts": [],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Giảm giá",
+        "endTimestampSec": "1640969999",
+        "name": "Giá Tốt mỗi ngày - 2118",
+        "type": "",
+        "landing": null
+      },
+      {
+        "id": 106159,
+        "isDefault": true,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": null,
+          "gifts": [
+            {
+              "sku": "1200253",
+              "name": "Ba lô Lenovo",
+              "imageUrl": "https://lh3.googleusercontent.com/9s8Aic3sDaMZ2-m8gSB5u6pAV_vpD989iDPNIkWTY9Hen8mDK1mWzGYme4N6wmmmITqnvekGo6IrpLVIueEw",
+              "quantity": 1,
+              "maxQuantityPerOrder": null,
+              "quantityDecimal": 1,
+              "maxQuantityPerOrderDecimal": null
+            }
+          ],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Tặng quà",
+        "endTimestampSec": "1640969999",
+        "name": "[Quà tặng] - Ba lô Lenovo [01.21]",
+        "type": "",
+        "landing": null
+      }
+    ],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "14490000",
+        "terminalPrice": "14490000",
+        "latestPrice": "13490000",
+        "discountAmount": "1000000",
+        "discountPercent": 6.9,
+        "sellPrice": "14490000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_trung_bay",
+      "sellable": false
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "1704883",
+      "skuId": "1704883",
+      "name": "Laptop Lenovo Ideapad 720s-13IKB (81BV0061VN) (13.3\" FHD/i5-8250U/8GB/UHD 620/Win10/1.1 kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/n7bCtYWejlyYazdqjlJQYgj8CQIY3mBYNl1UgieeLewug1f-coCqVC1eyChuNUcMI1F3EtMz6LnyF3AWr1wy",
+      "tags": [],
+      "brand": {
+        "code": "lenovo",
+        "name": "Lenovo",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-04",
+          "name": "Laptop Lenovo",
+          "id": 23
+        },
+        {
+          "code": "01-N001-04-02",
+          "name": "Laptop Lenovo Win",
+          "id": 27
+        },
+        {
+          "code": "01-N001-04-02-01",
+          "name": "Laptop Lenovo Win 1.1",
+          "id": 28
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 12,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-lenovo-ideapad-720s-13ikb-81bv0061vn-i5-8250u-vang",
+      "sellerSku": "1704883",
+      "canonical": "may-tinh-xach-tay-laptop-lenovo-ideapad-720s-13ikb-81bv0061vn-i5-8250u-vang-s1704883.html",
+      "uomCode": "81",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [
+      {
+        "id": 107014,
+        "isDefault": false,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": {
+            "percent": 0,
+            "maxAmount": 0,
+            "flat": 1700000,
+            "maxAmountPerOrder": null
+          },
+          "gifts": [],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Giảm giá",
+        "endTimestampSec": "1640969999",
+        "name": "Giá Tốt mỗi ngày - 2123",
+        "type": "",
+        "landing": null
+      },
+      {
+        "id": 106159,
+        "isDefault": true,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": null,
+          "gifts": [
+            {
+              "sku": "1200253",
+              "name": "Ba lô Lenovo",
+              "imageUrl": "https://lh3.googleusercontent.com/9s8Aic3sDaMZ2-m8gSB5u6pAV_vpD989iDPNIkWTY9Hen8mDK1mWzGYme4N6wmmmITqnvekGo6IrpLVIueEw",
+              "quantity": 1,
+              "maxQuantityPerOrder": null,
+              "quantityDecimal": 1,
+              "maxQuantityPerOrderDecimal": null
+            }
+          ],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Tặng quà",
+        "endTimestampSec": "1640969999",
+        "name": "[Quà tặng] - Ba lô Lenovo [01.21]",
+        "type": "",
+        "landing": null
+      }
+    ],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "21990000",
+        "terminalPrice": "21990000",
+        "latestPrice": "20290000",
+        "discountAmount": "1700000",
+        "discountPercent": 7.73,
+        "sellPrice": "21990000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_trung_bay",
+      "sellable": false
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "1800172",
+      "skuId": "1800172",
+      "name": "Laptop Acer Spin 3 SP314-51-36JE (NX.GUWSV.005) (14\" FHD/i3-7130U/4GB/1TB HDD/HD 620/Win10/1.7 kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/OEdAyRDdDhyxtQQvummHtf4f_SVFlp8rxTy0YpZ7uGDPjIfnVUk-gekTkouCjdHdB47ZGABq80XgAk2OoFo",
+      "tags": [],
+      "brand": {
+        "code": "acer",
+        "name": "ACER",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-01",
+          "name": "Laptop Acer",
+          "id": 2
+        },
+        {
+          "code": "01-N001-01-02",
+          "name": "Laptop Acer Win",
+          "id": 6
+        },
+        {
+          "code": "01-N001-01-02-02",
+          "name": "Laptop Acer Win 2.1",
+          "id": 8
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 12,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-acer-spin-3-sp314-51-36je-nx-guwsv-005-i3-7130u-xam",
+      "sellerSku": "1800172",
+      "canonical": "may-tinh-xach-tay-laptop-acer-spin-3-sp314-51-36je-nx-guwsv-005-i3-7130u-xam-s1800172.html",
+      "uomCode": "81",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "13899000",
+        "terminalPrice": "13899000",
+        "latestPrice": "13899000",
+        "discountAmount": "0",
+        "discountPercent": 0,
+        "sellPrice": "13899000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_ban",
+      "sellable": true
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "1800849",
+      "skuId": "1800849",
+      "name": "Laptop HP Pavilion 14-bf035TU (3MS07PA) (14\" FHD/i3-7100U/4GB/1TB HDD/HD 620/Win10/1.5 kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/K5Q2AxJOdGCHFbcUmvrGqEyhGjUhuoJ0-KJv00xyOZIPKbsRQ4kGF0-TFzIVLjasweBxlqlBuRe4CcNx0tiZ",
+      "tags": [
+        "Laptop-BTS",
+        "Hp-BTS"
+      ],
+      "brand": {
+        "code": "hp",
+        "name": "HP",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-05",
+          "name": "Laptop Compaq - HP",
+          "id": 30
+        },
+        {
+          "code": "01-N001-05-02",
+          "name": "Laptop Compaq - Hp Win",
+          "id": 34
+        },
+        {
+          "code": "01-N001-05-02-01",
+          "name": "Laptop Compaq - Hp Win 1.1",
+          "id": 35
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 12,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-hp-pavilion-14-bf035tu-3ms07pa-hong",
+      "sellerSku": "1800849",
+      "canonical": "may-tinh-xach-tay-laptop-hp-pavilion-14-bf035tu-3ms07pa-hong-s1800849.html",
+      "uomCode": "57",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [
+      {
+        "id": 106993,
+        "isDefault": false,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": {
+            "percent": 0,
+            "maxAmount": 0,
+            "flat": 800000,
+            "maxAmountPerOrder": null
+          },
+          "gifts": [],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Giảm giá",
+        "endTimestampSec": "1640969999",
+        "name": "Giá Tốt mỗi ngày - 2138",
+        "type": "",
+        "landing": null
+      }
+    ],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "12990000",
+        "terminalPrice": "12990000",
+        "latestPrice": "12190000",
+        "discountAmount": "800000",
+        "discountPercent": 6.16,
+        "sellPrice": "12990000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_trung_bay",
+      "sellable": false
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "1805176",
+      "skuId": "1805176",
+      "name": "Laptop Lenovo Yoga 520-14IKB (80X8016EVN) (14\" HD/i3-7130U/4GB/1TB HDD/HD 620/Win10/1.8 kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/EzITSjr2y0rGKU5HnoDyyX6_pIhJEBwpCFjeboysLS8pxH61sHwLpe3FOLQoALeePC4Gm2NImumfEBejEds",
+      "tags": [
+        "black-friday-hightlight"
+      ],
+      "brand": {
+        "code": "lenovo",
+        "name": "Lenovo",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-04",
+          "name": "Laptop Lenovo",
+          "id": 23
+        },
+        {
+          "code": "01-N001-04-02",
+          "name": "Laptop Lenovo Win",
+          "id": 27
+        },
+        {
+          "code": "01-N001-04-02-02",
+          "name": "Laptop Lenovo Win 2.1",
+          "id": 29
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 12,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-lenovo-yoga-520-14ikb-80x8016evn-i3-7130u-vang",
+      "sellerSku": "1805176",
+      "canonical": "may-tinh-xach-tay-laptop-lenovo-yoga-520-14ikb-80x8016evn-i3-7130u-vang-s1805176.html",
+      "uomCode": "81",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [
+      {
+        "id": 136255,
+        "isDefault": false,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": {
+            "percent": 0,
+            "maxAmount": 0,
+            "flat": 900000,
+            "maxAmountPerOrder": null
+          },
+          "gifts": [],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Giảm giá",
+        "endTimestampSec": "1640969999",
+        "name": "Giá Tốt Mỗi Ngày- 3129",
+        "type": "",
+        "landing": null
+      },
+      {
+        "id": 106159,
+        "isDefault": true,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": null,
+          "gifts": [
+            {
+              "sku": "1200253",
+              "name": "Ba lô Lenovo",
+              "imageUrl": "https://lh3.googleusercontent.com/9s8Aic3sDaMZ2-m8gSB5u6pAV_vpD989iDPNIkWTY9Hen8mDK1mWzGYme4N6wmmmITqnvekGo6IrpLVIueEw",
+              "quantity": 1,
+              "maxQuantityPerOrder": null,
+              "quantityDecimal": 1,
+              "maxQuantityPerOrderDecimal": null
+            }
+          ],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Tặng quà",
+        "endTimestampSec": "1640969999",
+        "name": "[Quà tặng] - Ba lô Lenovo [01.21]",
+        "type": "",
+        "landing": null
+      }
+    ],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "12790000",
+        "terminalPrice": "12790000",
+        "latestPrice": "11890000",
+        "discountAmount": "900000",
+        "discountPercent": 7.04,
+        "sellPrice": "12790000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_trung_bay",
+      "sellable": false
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "1807469",
+      "skuId": "1807469",
+      "name": "Laptop Acer Nitro 5 AN515-52-51LW (NH.Q3LSV.002) (15.6\" FHD/i5-8300H/8GB/1TB HDD/GTX 1050Ti/Linux/2.4 kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/oUobPUzGSekGyL_BguyYTG0KyZWrBYEzqAUIxOGC27jMy1aHLZOx-a7_ctsuER1Q5_1QomtUyiCcYD2PHjk",
+      "tags": [
+        "acer-day-t10"
+      ],
+      "brand": {
+        "code": "acer",
+        "name": "ACER",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-01",
+          "name": "Laptop Acer",
+          "id": 2
+        },
+        {
+          "code": "01-N001-01-01",
+          "name": "Laptop Acer Option",
+          "id": 3
+        },
+        {
+          "code": "01-N001-01-01-01",
+          "name": "Laptop Acer Option 1.1",
+          "id": 4
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 12,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-acer-nitro-5-an515-52-51lw-nh-q3lsv-002-den",
+      "sellerSku": "1807469",
+      "canonical": "may-tinh-xach-tay-laptop-acer-nitro-5-an515-52-51lw-nh-q3lsv-002-den-s1807469.html",
+      "uomCode": "81",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [],
+    "totalAvailable": 2,
+    "prices": [
+      {
+        "supplierRetailPrice": "24040000",
+        "terminalPrice": "24040000",
+        "latestPrice": "24040000",
+        "discountAmount": "0",
+        "discountPercent": 0,
+        "sellPrice": "24040000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_ban",
+      "sellable": true
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "1808092",
+      "skuId": "1808092",
+      "name": "Laptop Lenovo Yoga 520-14IKBR (81C800LHVN) (14\" FHD/i3-7020U/4GB/HD 620/Win10/1.7 kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/AZAqTxDk0949raCPFyvdYP3HkFASYQEi7-meIQ8xgWYZD380dCTDuwS-Ik5YMe7L6Iyq4a1uOI7qcQ6cOCk",
+      "tags": [],
+      "brand": {
+        "code": "lenovo",
+        "name": "Lenovo",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-04",
+          "name": "Laptop Lenovo",
+          "id": 23
+        },
+        {
+          "code": "01-N001-04-02",
+          "name": "Laptop Lenovo Win",
+          "id": 27
+        },
+        {
+          "code": "01-N001-04-02-02",
+          "name": "Laptop Lenovo Win 2.1",
+          "id": 29
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 12,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-lenovo-yoga-520-14ikbr-81c800lhvn-i3-7020u-vang",
+      "sellerSku": "1808092",
+      "canonical": "may-tinh-xach-tay-laptop-lenovo-yoga-520-14ikbr-81c800lhvn-i3-7020u-vang-s1808092.html",
+      "uomCode": "81",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [
+      {
+        "id": 106921,
+        "isDefault": false,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": {
+            "percent": 0,
+            "maxAmount": 0,
+            "flat": 1000000,
+            "maxAmountPerOrder": null
+          },
+          "gifts": [],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Giảm giá",
+        "endTimestampSec": "1640969999",
+        "name": "Giá Tốt mỗi ngày - 2195",
+        "type": "",
+        "landing": null
+      },
+      {
+        "id": 106159,
+        "isDefault": true,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": null,
+          "gifts": [
+            {
+              "sku": "1200253",
+              "name": "Ba lô Lenovo",
+              "imageUrl": "https://lh3.googleusercontent.com/9s8Aic3sDaMZ2-m8gSB5u6pAV_vpD989iDPNIkWTY9Hen8mDK1mWzGYme4N6wmmmITqnvekGo6IrpLVIueEw",
+              "quantity": 1,
+              "maxQuantityPerOrder": null,
+              "quantityDecimal": 1,
+              "maxQuantityPerOrderDecimal": null
+            }
+          ],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Tặng quà",
+        "endTimestampSec": "1640969999",
+        "name": "[Quà tặng] - Ba lô Lenovo [01.21]",
+        "type": "",
+        "landing": null
+      }
+    ],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "15490000",
+        "terminalPrice": "15490000",
+        "latestPrice": "14490000",
+        "discountAmount": "1000000",
+        "discountPercent": 6.46,
+        "sellPrice": "15490000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_trung_bay",
+      "sellable": false
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "1808443",
+      "skuId": "1808443",
+      "name": "Laptop Acer Swift 3 SF315-52-52Z7 (NX.GZBSV.004) (15.6\" FHD/i5-8250U/4GB/1TB HDD/UHD 620/Win10/1.6 kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/9jsqa2sCGaVFLcy7vVx1EuW0ngB3kyEHzm3KZLpyAeblS6WmyQkwH3TZfzSNPrVingimxLpN20fogK123T3s",
+      "tags": [
+        "acer-day-t10"
+      ],
+      "brand": {
+        "code": "acer",
+        "name": "ACER",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-01",
+          "name": "Laptop Acer",
+          "id": 2
+        },
+        {
+          "code": "01-N001-01-02",
+          "name": "Laptop Acer Win",
+          "id": 6
+        },
+        {
+          "code": "01-N001-01-02-01",
+          "name": "Laptop Acer Win 1.1",
+          "id": 7
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [
+        {
+          "code": "014",
+          "name": "Máy tính và thiết bị văn phòng",
+          "id": 3947
+        },
+        {
+          "code": "014-001",
+          "name": "Máy tính và máy tính bảng",
+          "id": 3948
+        },
+        {
+          "code": "014-001-002",
+          "name": "Laptop",
+          "id": 3954
+        },
+        {
+          "code": "014-001-002-004",
+          "name": "Laptop Phổ thông",
+          "id": 3958
+        }
+      ],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 12,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-acer-swift-3-sf315-52-52z7-nx-gzbsv-004-vang",
+      "sellerSku": "1808443",
+      "canonical": "may-tinh-xach-tay-laptop-acer-swift-3-sf315-52-52z7-nx-gzbsv-004-vang-s1808443.html",
+      "uomCode": "81",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "15999000",
+        "terminalPrice": "15999000",
+        "latestPrice": "15999000",
+        "discountAmount": "0",
+        "discountPercent": 0,
+        "sellPrice": "15999000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_trung_bay",
+      "sellable": false
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "1810455",
+      "skuId": "1810455",
+      "name": "Laptop Acer Swift 3 SF315-51-54H0 (NX.GSKSV.004) (15.6\" FHD/i5-8250U/4GB/1TB HDD/UHD 620/Win10/2.1 kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/g6WVUqzuW2nR1slhvsi5AHA-dPWkhJ0O3t5JQ-lfyCEVcGBprTt0Tg-UvDWLAq9RIACr7ROB-wb-C1lkQM7o",
+      "tags": [
+        "acer-day-t10"
+      ],
+      "brand": {
+        "code": "acer",
+        "name": "ACER",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-01",
+          "name": "Laptop Acer",
+          "id": 2
+        },
+        {
+          "code": "01-N001-01-02",
+          "name": "Laptop Acer Win",
+          "id": 6
+        },
+        {
+          "code": "01-N001-01-02-01",
+          "name": "Laptop Acer Win 1.1",
+          "id": 7
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 12,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-acer-swift-3-sf315-51-54h0-nx-gsksv-004-xanh",
+      "sellerSku": "1810455",
+      "canonical": "may-tinh-xach-tay-laptop-acer-swift-3-sf315-51-54h0-nx-gsksv-004-xanh-s1810455.html",
+      "uomCode": "81",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "16990000",
+        "terminalPrice": "16990000",
+        "latestPrice": "16990000",
+        "discountAmount": "0",
+        "discountPercent": 0,
+        "sellPrice": "16990000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_ban",
+      "sellable": true
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "1810572",
+      "skuId": "1810572",
+      "name": "Laptop Acer Swift 3 SF314-55G-76FW (NX.H3USV.001) (14\" FHD/i7-8565U/8GB/MX150/Win10/1.5 kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/K6TlcQk6beNlKrP2SFi3RzdEHknA-9HtjqDBV-Z9Qv2gLx5sduvFgAF60Uh6XNt359asabRPV1uIUP9iWg",
+      "tags": [
+        "acer-day-t10"
+      ],
+      "brand": {
+        "code": "acer",
+        "name": "ACER",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-01",
+          "name": "Laptop Acer",
+          "id": 2
+        },
+        {
+          "code": "01-N001-01-02",
+          "name": "Laptop Acer Win",
+          "id": 6
+        },
+        {
+          "code": "01-N001-01-02-01",
+          "name": "Laptop Acer Win 1.1",
+          "id": 7
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 12,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-acer-swift-3-sf314-55g-76fw-nx-h3usv-001-bac",
+      "sellerSku": "1810572",
+      "canonical": "may-tinh-xach-tay-laptop-acer-swift-3-sf314-55g-76fw-nx-h3usv-001-bac-s1810572.html",
+      "uomCode": "81",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "33999000",
+        "terminalPrice": "33999000",
+        "latestPrice": "33999000",
+        "discountAmount": "0",
+        "discountPercent": 0,
+        "sellPrice": "33999000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_ban",
+      "sellable": true
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "18120241",
+      "skuId": "18120241",
+      "name": "Laptop Acer Swift 5 SF514-53T-740R (NX.H7KSV.002) (14\" FHD/i7-8565U/8GB/256GB SSD/UHD 620/Win10/1 kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/wNWZ9DNbiTD04lvtDgJpuncRluYx0FOndLPl50k3JewVoiORRdYwz0PHUq-ykbPzm6_ikeLFgBtIEHQ_9w",
+      "tags": [
+        "acer-day-t10"
+      ],
+      "brand": {
+        "code": "acer",
+        "name": "ACER",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-01",
+          "name": "Laptop Acer",
+          "id": 2
+        },
+        {
+          "code": "01-N001-01-02",
+          "name": "Laptop Acer Win",
+          "id": 6
+        },
+        {
+          "code": "01-N001-01-02-02",
+          "name": "Laptop Acer Win 2.1",
+          "id": 8
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 12,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-acer-swift-5-sf514-53t-740r-nx-h7ksv-002-i7-8565u",
+      "sellerSku": "18120241",
+      "canonical": "may-tinh-xach-tay-laptop-acer-swift-5-sf514-53t-740r-nx-h7ksv-002-i7-8565u-s18120241.html",
+      "uomCode": "81",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "27990000",
+        "terminalPrice": "27990000",
+        "latestPrice": "27990000",
+        "discountAmount": "0",
+        "discountPercent": 0,
+        "sellPrice": "27990000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_trung_bay",
+      "sellable": false
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "19010009",
+      "skuId": "19010009",
+      "name": "Laptop ASUS ROG Zephyrus S GX531GM-ES004T (15.6\" FHD/i7-8750H/16GB/512GB SSD/GTX 1060/Win10/2.1 kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/o6ALRNPERVwq8ZIHcuLNNgVZJ_VtrOTExT4S1BQ6Uiw5cOKgZMnVH_mBdgH1c_KzLh6kI2wlgTeGIaq3gRc",
+      "tags": [],
+      "brand": {
+        "code": "asus",
+        "name": "ASUS",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-02",
+          "name": "Laptop Asus",
+          "id": 9
+        },
+        {
+          "code": "01-N001-02-02",
+          "name": "Laptop Asus Win",
+          "id": 13
+        },
+        {
+          "code": "01-N001-02-02-01",
+          "name": "Laptop Asus Win 1.1",
+          "id": 14
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 24,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-asus-rog-zephyrus-gx531gm-es004t-i7-8750h",
+      "sellerSku": "19010009",
+      "canonical": "may-tinh-xach-tay-laptop-asus-rog-zephyrus-gx531gm-es004t-i7-8750h-s19010009.html",
+      "uomCode": "81",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [
+      {
+        "id": 106165,
+        "isDefault": true,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": null,
+          "gifts": [
+            {
+              "sku": "1207994",
+              "name": "Túi đựng laptop 15''",
+              "imageUrl": "https://lh3.googleusercontent.com/8TYtx-F0wLPEsufDd-N2y4txkDy3dxxjipjA6k5DjccQhwtdK_6Mx0YPuSUZF3bOEGG5-hP8-MFNReb4X0k",
+              "quantity": 1,
+              "maxQuantityPerOrder": null,
+              "quantityDecimal": 1,
+              "maxQuantityPerOrderDecimal": null
+            }
+          ],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Tặng quà",
+        "endTimestampSec": "1640969999",
+        "name": "[Quà tặng] - Túi đựng laptop 15 [01.21] - 1",
+        "type": "",
+        "landing": null
+      }
+    ],
+    "totalAvailable": 2,
+    "prices": [
+      {
+        "supplierRetailPrice": "54990000",
+        "terminalPrice": "54990000",
+        "latestPrice": "54990000",
+        "discountAmount": "0",
+        "discountPercent": 0,
+        "sellPrice": "54990000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_trung_bay",
+      "sellable": false
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "19010018",
+      "skuId": "19010018",
+      "name": "Laptop Acer Aspire 5 A515-53G-564C (NX.H82SV.001) (15.6\" FHD/i5-8265U/4GB/1TB HDD/Free DOS/2.1 kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/7OmAS5N7SZIRRgyijauUwDsx2-uABASYBz6uvODbezUXlcyHsEDzIB64phu5NE_VCz4txdpmfBM9vKcIyaw",
+      "tags": [
+        "acer-day-t10",
+        "promotion-laptop-w-one-11-2020"
+      ],
+      "brand": {
+        "code": "acer",
+        "name": "ACER",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-01",
+          "name": "Laptop Acer",
+          "id": 2
+        },
+        {
+          "code": "01-N001-01-01",
+          "name": "Laptop Acer Option",
+          "id": 3
+        },
+        {
+          "code": "01-N001-01-01-01",
+          "name": "Laptop Acer Option 1.1",
+          "id": 4
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 12,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-acer-aspire-a515-53g-564c-nx-h82sv-001-i5-8265u",
+      "sellerSku": "19010018",
+      "canonical": "may-tinh-xach-tay-laptop-acer-aspire-a515-53g-564c-nx-h82sv-001-i5-8265u-s19010018.html",
+      "uomCode": "81",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "15490000",
+        "terminalPrice": "15490000",
+        "latestPrice": "15490000",
+        "discountAmount": "0",
+        "discountPercent": 0,
+        "sellPrice": "15490000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_ban",
+      "sellable": true
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "19010037",
+      "skuId": "19010037",
+      "name": "Laptop ASUS ROG Strix SCAR II GL504GM-ES312T (15.6\" FHD/i7-8750H/8GB/256GB SSD/GTX 1060/Win10/2.4 kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/AiLttFPYF0ooqs6_pY6zaWwSdfSllmjR9UlrUIp-41zl2wEMSB8WXfoK0FN4RGy57gBEe6oh4ogpADzyYp0",
+      "tags": [],
+      "brand": {
+        "code": "asus",
+        "name": "ASUS",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-02",
+          "name": "Laptop Asus",
+          "id": 9
+        },
+        {
+          "code": "01-N001-02-02",
+          "name": "Laptop Asus Win",
+          "id": 13
+        },
+        {
+          "code": "01-N001-02-02-01",
+          "name": "Laptop Asus Win 1.1",
+          "id": 14
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 24,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-asus-gl504gm-es312t-i7-8750h",
+      "sellerSku": "19010037",
+      "canonical": "may-tinh-xach-tay-laptop-asus-gl504gm-es312t-i7-8750h-s19010037.html",
+      "uomCode": "81",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [],
+    "totalAvailable": 2,
+    "prices": [
+      {
+        "supplierRetailPrice": "39990000",
+        "terminalPrice": "39990000",
+        "latestPrice": "39990000",
+        "discountAmount": "0",
+        "discountPercent": 0,
+        "sellPrice": "39990000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_trung_bay",
+      "sellable": false
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "19030302",
+      "skuId": "19030302",
+      "name": "Laptop Acer Swift 3 SF313-51-56UW (NX.H3ZSV.002) (13.3\" FHD/i5-8250U/8GB/256GB SSD/UHD 620/Win10/1.4 kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/3v4BYiMjCJmWCq5piog6LhIzE0RALT-WYy-zE1aBnspgZn8ih4HnwDsqb7KOZyrv7DS_qBd9ZqCqxTQabnk",
+      "tags": [
+        "acer-day-t10"
+      ],
+      "brand": {
+        "code": "acer",
+        "name": "ACER",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-01",
+          "name": "Laptop Acer",
+          "id": 2
+        },
+        {
+          "code": "01-N001-01-02",
+          "name": "Laptop Acer Win",
+          "id": 6
+        },
+        {
+          "code": "01-N001-01-02-01",
+          "name": "Laptop Acer Win 1.1",
+          "id": 7
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 12,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-acer-swift-3-sf313-51-56uw-nx-h3zsv-002-i5-8250u-bac",
+      "sellerSku": "19030302",
+      "canonical": "may-tinh-xach-tay-laptop-acer-swift-3-sf313-51-56uw-nx-h3zsv-002-i5-8250u-bac-s19030302.html",
+      "uomCode": "81",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "26490000",
+        "terminalPrice": "26490000",
+        "latestPrice": "26490000",
+        "discountAmount": "0",
+        "discountPercent": 0,
+        "sellPrice": "26490000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_ban",
+      "sellable": true
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "19050311",
+      "skuId": "19050311",
+      "name": "Laptop Acer Nitro 5 AN515-54-784P (NH.Q59SV.013) (15\" FHD/i7-9750H/8GB/1TB HDD/GTX 1650/Win10/2.3 kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/D-3_41MUr4Yc3q-1Fx7I-gCZgWm7QEpM9VZ7ponzr5RpnNOaZv8Z_DLTz96rYEq8mZN0QNu2WCt8MfQxlqRI",
+      "tags": [
+        "acer-day-t10"
+      ],
+      "brand": {
+        "code": "acer",
+        "name": "ACER",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-01",
+          "name": "Laptop Acer",
+          "id": 2
+        },
+        {
+          "code": "01-N001-01-02",
+          "name": "Laptop Acer Win",
+          "id": 6
+        },
+        {
+          "code": "01-N001-01-02-01",
+          "name": "Laptop Acer Win 1.1",
+          "id": 7
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 12,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-acer-nitro-5-an515-54-784p-nh-q59sv-013-i7-9750h-den",
+      "sellerSku": "19050311",
+      "canonical": "may-tinh-xach-tay-laptop-acer-nitro-5-an515-54-784p-nh-q59sv-013-i7-9750h-den-s19050311.html",
+      "uomCode": "81",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [
+      {
+        "id": 189770,
+        "isDefault": false,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": {
+            "percent": 0,
+            "maxAmount": 0,
+            "flat": 1800000,
+            "maxAmountPerOrder": null
+          },
+          "gifts": [],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Giá Tốt Mỗi Ngày",
+        "endTimestampSec": "1640969999",
+        "name": "Giá Tốt Mỗi Ngày - 5814",
+        "type": "",
+        "landing": null
+      },
+      {
+        "id": 125747,
+        "isDefault": true,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": null,
+          "gifts": [
+            {
+              "sku": "1701171",
+              "name": "Ba lô Predator",
+              "imageUrl": "https://lh3.googleusercontent.com/pQw0whszQzQrmNSJqaeVXZ3nci31aebNiHTbVVsuxx6_ItdETz7J6A8F_xdMKmGJCqrJJsDdVmCrF33QuaTphnyEZV_N4ZY6Ng",
+              "quantity": 1,
+              "maxQuantityPerOrder": null,
+              "quantityDecimal": 1,
+              "maxQuantityPerOrderDecimal": null
+            }
+          ],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Tặng quà",
+        "endTimestampSec": "1640969999",
+        "name": "[Quà tặng] - Ba lô Predator 1304",
+        "type": "",
+        "landing": null
+      }
+    ],
+    "totalAvailable": 2,
+    "prices": [
+      {
+        "supplierRetailPrice": "28990000",
+        "terminalPrice": "28990000",
+        "latestPrice": "27190000",
+        "discountAmount": "1800000",
+        "discountPercent": 6.21,
+        "sellPrice": "28990000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_ban",
+      "sellable": true
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "19060194",
+      "skuId": "19060194",
+      "name": "Laptop HP Pavilion 15-cs2056TX (6YZ11PA) (15\" FHD/i5-8265U/4GB/1TB HDD/GeForce MX130/Win10/1.9 kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/xmP_BQ29OmZp2pA54sbVoE_yBAD7YULNYrUtLo3JqV7XsqSLXC4lc0NbNAs9G9eDcFtZlpc129rmRWrTY0Y",
+      "tags": [
+        "Laptop-BTS",
+        "Hp-BTS"
+      ],
+      "brand": {
+        "code": "hp",
+        "name": "HP",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-05",
+          "name": "Laptop Compaq - HP",
+          "id": 30
+        },
+        {
+          "code": "01-N001-05-02",
+          "name": "Laptop Compaq - Hp Win",
+          "id": 34
+        },
+        {
+          "code": "01-N001-05-02-01",
+          "name": "Laptop Compaq - Hp Win 1.1",
+          "id": 35
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 12,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-hp-pavilion-15-cs2056tx-6yz11pa-i5-8265u-vang",
+      "sellerSku": "19060194",
+      "canonical": "may-tinh-xach-tay-laptop-hp-pavilion-15-cs2056tx-6yz11pa-i5-8265u-vang-s19060194.html",
+      "uomCode": "57",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [
+      {
+        "id": 106940,
+        "isDefault": false,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": {
+            "percent": 0,
+            "maxAmount": 0,
+            "flat": 1100000,
+            "maxAmountPerOrder": null
+          },
+          "gifts": [],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "PM [2021] -",
+        "endTimestampSec": "1640969999",
+        "name": "PM [2021] - 798",
+        "type": "",
+        "landing": null
+      },
+      {
+        "id": 106165,
+        "isDefault": true,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": null,
+          "gifts": [
+            {
+              "sku": "1207994",
+              "name": "Túi đựng laptop 15''",
+              "imageUrl": "https://lh3.googleusercontent.com/8TYtx-F0wLPEsufDd-N2y4txkDy3dxxjipjA6k5DjccQhwtdK_6Mx0YPuSUZF3bOEGG5-hP8-MFNReb4X0k",
+              "quantity": 1,
+              "maxQuantityPerOrder": null,
+              "quantityDecimal": 1,
+              "maxQuantityPerOrderDecimal": null
+            }
+          ],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Tặng quà",
+        "endTimestampSec": "1640969999",
+        "name": "[Quà tặng] - Túi đựng laptop 15 [01.21] - 1",
+        "type": "",
+        "landing": null
+      }
+    ],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "16490000",
+        "terminalPrice": "16490000",
+        "latestPrice": "15390000",
+        "discountAmount": "1100000",
+        "discountPercent": 6.67,
+        "sellPrice": "16490000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_trung_bay",
+      "sellable": false
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "190800666",
+      "skuId": "190800666",
+      "name": "Laptop Lenovo Ideapad S340-15IWL (81N800RSVN) (15\" FHD/i3-8145U/4GB/1TB HDD/UHD 620/Win10/1.8 kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/WDzqNhmsFfSgtDVTs_bCx1qxeSA9xMRtPXsNk-K9X4o9BMtURyrGFaKYUQK3N1sdJ0HchtBzTACEC0d6T7g",
+      "tags": [],
+      "brand": {
+        "code": "lenovo",
+        "name": "Lenovo",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-04",
+          "name": "Laptop Lenovo",
+          "id": 23
+        },
+        {
+          "code": "01-N001-04-02",
+          "name": "Laptop Lenovo Win",
+          "id": 27
+        },
+        {
+          "code": "01-N001-04-02-01",
+          "name": "Laptop Lenovo Win 1.1",
+          "id": 28
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [
+        {
+          "code": "014",
+          "name": "Máy tính và thiết bị văn phòng",
+          "id": 3947
+        },
+        {
+          "code": "014-001",
+          "name": "Máy tính và máy tính bảng",
+          "id": 3948
+        },
+        {
+          "code": "014-001-002",
+          "name": "Laptop",
+          "id": 3954
+        },
+        {
+          "code": "014-001-002-004",
+          "name": "Laptop Phổ thông",
+          "id": 3958
+        }
+      ],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 12,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-lenovo-ideapad-s34015iwl81n800rsvn-i38145u-den",
+      "sellerSku": "190800666",
+      "canonical": "may-tinh-xach-tay-laptop-lenovo-ideapad-s34015iwl81n800rsvn-i38145u-den-s190800666.html",
+      "uomCode": "81",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [
+      {
+        "id": 106159,
+        "isDefault": true,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": null,
+          "gifts": [
+            {
+              "sku": "1200253",
+              "name": "Ba lô Lenovo",
+              "imageUrl": "https://lh3.googleusercontent.com/9s8Aic3sDaMZ2-m8gSB5u6pAV_vpD989iDPNIkWTY9Hen8mDK1mWzGYme4N6wmmmITqnvekGo6IrpLVIueEw",
+              "quantity": 1,
+              "maxQuantityPerOrder": null,
+              "quantityDecimal": 1,
+              "maxQuantityPerOrderDecimal": null
+            }
+          ],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Tặng quà",
+        "endTimestampSec": "1640969999",
+        "name": "[Quà tặng] - Ba lô Lenovo [01.21]",
+        "type": "",
+        "landing": null
+      }
+    ],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "10790000",
+        "terminalPrice": "10790000",
+        "latestPrice": "10790000",
+        "discountAmount": "0",
+        "discountPercent": 0,
+        "sellPrice": "10790000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_ban",
+      "sellable": true
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "191001276",
+      "skuId": "191001276",
+      "name": "Laptop Dell G3 15 3590-N5I5517W (15\" FHD/i5-9300H/8GB/256GB SSD/GTX 1050/Win10/2.3kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/7u1ADqRL2Pod00m5jOMM7Q50bJoxKuD4DcWFdVUzZG6cFIOW7vFTE7qX4EB5t1icfXJ0ng91sQMpK1FUkYI7",
+      "tags": [
+        "Laptop-giam-toi-7tr"
+      ],
+      "brand": {
+        "code": "dell",
+        "name": "Dell",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-03",
+          "name": "Laptop Dell",
+          "id": 16
+        },
+        {
+          "code": "01-N001-03-02",
+          "name": "Laptop Dell Win",
+          "id": 20
+        },
+        {
+          "code": "01-N001-03-02-01",
+          "name": "Laptop Dell Win 1.1",
+          "id": 21
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [
+        {
+          "code": "014",
+          "name": "Máy tính và thiết bị văn phòng",
+          "id": 3947
+        },
+        {
+          "code": "014-001",
+          "name": "Máy tính và máy tính bảng",
+          "id": 3948
+        },
+        {
+          "code": "014-001-002",
+          "name": "Laptop",
+          "id": 3954
+        },
+        {
+          "code": "014-001-002-002",
+          "name": "Laptop Gaming",
+          "id": 3956
+        }
+      ],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 12,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-dell-g3-15-3590-3590n5i5517w-i59300h-den",
+      "sellerSku": "191001276",
+      "canonical": "may-tinh-xach-tay-laptop-dell-g3-15-3590-3590n5i5517w-i59300h-den-s191001276.html",
+      "uomCode": "57",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [
+      {
+        "id": 128728,
+        "isDefault": false,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": {
+            "percent": 0,
+            "maxAmount": 0,
+            "flat": 2900000,
+            "maxAmountPerOrder": null
+          },
+          "gifts": [],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Giảm giá",
+        "endTimestampSec": "1640969999",
+        "name": "Giá Tốt Mỗi Ngày- 2618",
+        "type": "",
+        "landing": null
+      }
+    ],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "23490000",
+        "terminalPrice": "23490000",
+        "latestPrice": "20590000",
+        "discountAmount": "2900000",
+        "discountPercent": 12.35,
+        "sellPrice": "23490000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_trung_bay",
+      "sellable": false
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "191007143",
+      "skuId": "191007143",
+      "name": "Laptop ASUS ZenBook Duo UX481FL-BM048T (14\" FHD/i5-10210U/8GB/512GB SSD/MX250/Win10/1.6kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/mULv1yijI2pRK5lqdtGCxer9HEL0bOeTNjFHRFrVXlneK3MBLq7sFlCu0IGiEUObtJUnSXFiKbblL4EzKbw",
+      "tags": [
+        "promotion-laptop-super-sale-w3-12-2020",
+        "holiday-season-laptop-12-2020"
+      ],
+      "brand": {
+        "code": "asus",
+        "name": "ASUS",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-02",
+          "name": "Laptop Asus",
+          "id": 9
+        },
+        {
+          "code": "01-N001-02-02",
+          "name": "Laptop Asus Win",
+          "id": 13
+        },
+        {
+          "code": "01-N001-02-02-01",
+          "name": "Laptop Asus Win 1.1",
+          "id": 14
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [
+        {
+          "code": "014",
+          "name": "Máy tính và thiết bị văn phòng",
+          "id": 3947
+        },
+        {
+          "code": "014-001",
+          "name": "Máy tính và máy tính bảng",
+          "id": 3948
+        },
+        {
+          "code": "014-001-002",
+          "name": "Laptop",
+          "id": 3954
+        },
+        {
+          "code": "014-001-002-003",
+          "name": "Laptop Cao cấp",
+          "id": 3957
+        }
+      ],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 24,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-asus-zenbook-ux481flbm048t-i510210u-xanh",
+      "sellerSku": "191007143",
+      "canonical": "may-tinh-xach-tay-laptop-asus-zenbook-ux481flbm048t-i510210u-xanh-s191007143.html",
+      "uomCode": "81",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "30990000",
+        "terminalPrice": "30990000",
+        "latestPrice": "30990000",
+        "discountAmount": "0",
+        "discountPercent": 0,
+        "sellPrice": "30990000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_trung_bay",
+      "sellable": false
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "191100021",
+      "skuId": "191100021",
+      "name": "Laptop MSI GP65 Leopard 9SD-224VN (15\" FHD/i7-9750H/16GB/512GB SSD/GTX 1660Ti/Win10/2.3 kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/jKndbh-fBd-5W8n_yoN14NSHxkcjqBWiRAvG23pir2zRSDDTmH3CCGqvx8Oy6clWFN5ky7Ha5cZILkWHOCc",
+      "tags": [],
+      "brand": {
+        "code": "msi",
+        "name": "MSI",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-08",
+          "name": "Laptop MSI",
+          "id": 47
+        },
+        {
+          "code": "01-N001-08-02",
+          "name": "Laptop MSI Win",
+          "id": 50
+        },
+        {
+          "code": "01-N001-08-02-01",
+          "name": "Laptop MSI Win 1.1",
+          "id": 51
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 24,
+        "description": "Bảo hành 12 tháng với pin và phụ kiện"
+      },
+      "slug": "may-tinh-xach-tay-laptop-msi-leopard-gp65-9sd224vn-i79750h-den",
+      "sellerSku": "191100021",
+      "canonical": "may-tinh-xach-tay-laptop-msi-leopard-gp65-9sd224vn-i79750h-den-s191100021.html",
+      "uomCode": "81",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "37990000",
+        "terminalPrice": "37990000",
+        "latestPrice": "37990000",
+        "discountAmount": "0",
+        "discountPercent": 0,
+        "sellPrice": "37990000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_ban",
+      "sellable": true
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "191201191",
+      "skuId": "191201191",
+      "name": "Laptop HP OMEN 15-dh0169tx (8ZR37PA) (15\" FHD 240Hz/i9-9880H/16GB/512GB SSD/RTX 2080/Win10/2.4kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/q2TFrdm-BpcMa8kDddjjYAi192U5tRPPTJxGKA4jJW1Zr8xJp5v-IwDPehzHTt99YOpBl1hLQ1qQQlCK1g",
+      "tags": [
+        "Laptop-BTS",
+        "Hp-BTS"
+      ],
+      "brand": {
+        "code": "hp",
+        "name": "HP",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-05",
+          "name": "Laptop Compaq - HP",
+          "id": 30
+        },
+        {
+          "code": "01-N001-05-02",
+          "name": "Laptop Compaq - Hp Win",
+          "id": 34
+        },
+        {
+          "code": "01-N001-05-02-01",
+          "name": "Laptop Compaq - Hp Win 1.1",
+          "id": 35
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [
+        {
+          "code": "014",
+          "name": "Máy tính và thiết bị văn phòng",
+          "id": 3947
+        },
+        {
+          "code": "014-001",
+          "name": "Máy tính và máy tính bảng",
+          "id": 3948
+        },
+        {
+          "code": "014-001-002",
+          "name": "Laptop",
+          "id": 3954
+        },
+        {
+          "code": "014-001-002-002",
+          "name": "Laptop Gaming",
+          "id": 3956
+        }
+      ],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 12,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-hp-omen-15dh0169tx-8zr37pa-i99880h-den",
+      "sellerSku": "191201191",
+      "canonical": "may-tinh-xach-tay-laptop-hp-omen-15dh0169tx-8zr37pa-i99880h-den-s191201191.html",
+      "uomCode": "58",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [
+      {
+        "id": 106169,
+        "isDefault": true,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": null,
+          "gifts": [
+            {
+              "sku": "1600721",
+              "name": "Ba lô HP Odyssey (Hàng tặng)",
+              "imageUrl": "https://lh3.googleusercontent.com/jk88sBoKchDpdaNvnLlRPY6XL6DssMrK5DryZ3p37sUW-LDdZLPh2jeRdSQV3MRN3XQmpeAGPKLfEWwF9Q",
+              "quantity": 1,
+              "maxQuantityPerOrder": null,
+              "quantityDecimal": 1,
+              "maxQuantityPerOrderDecimal": null
+            }
+          ],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Tặng quà",
+        "endTimestampSec": "1640969999",
+        "name": "[Quà tặng] - Ba lô HP Odyssey [01.21]",
+        "type": "",
+        "landing": null
+      }
+    ],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "76990000",
+        "terminalPrice": "76990000",
+        "latestPrice": "76990000",
+        "discountAmount": "0",
+        "discountPercent": 0,
+        "sellPrice": "76990000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_trung_bay",
+      "sellable": false
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "191201192",
+      "skuId": "191201192",
+      "name": "Laptop HP OMEN 15-dh0172tx (8ZR42PA) (15\" FHD 240Hz/i7-9750H/16GB/512GB SSD/1TB HDD/RTX 2070/Win10/2.4kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/puuXJEiI0UMDePYSK0uy_fi95PRWQhfddK8EeutqM-d-G3ExyVc8BZCpmASH0XHHn92o_qgjNQj2SmMnXWQ",
+      "tags": [
+        "Laptop-BTS",
+        "Hp-BTS"
+      ],
+      "brand": {
+        "code": "hp",
+        "name": "HP",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-05",
+          "name": "Laptop Compaq - HP",
+          "id": 30
+        },
+        {
+          "code": "01-N001-05-02",
+          "name": "Laptop Compaq - Hp Win",
+          "id": 34
+        },
+        {
+          "code": "01-N001-05-02-01",
+          "name": "Laptop Compaq - Hp Win 1.1",
+          "id": 35
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 12,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-hp-omen-15dh0172tx-8zr42pa-i79750h-den",
+      "sellerSku": "191201192",
+      "canonical": "may-tinh-xach-tay-laptop-hp-omen-15dh0172tx-8zr42pa-i79750h-den-s191201192.html",
+      "uomCode": "58",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [
+      {
+        "id": 128716,
+        "isDefault": false,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": {
+            "percent": 0,
+            "maxAmount": 0,
+            "flat": 10500000,
+            "maxAmountPerOrder": null
+          },
+          "gifts": [],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Giảm giá",
+        "endTimestampSec": "1640969999",
+        "name": "Giá Tốt Mỗi Ngày- 2606",
+        "type": "",
+        "landing": null
+      }
+    ],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "54990000",
+        "terminalPrice": "54990000",
+        "latestPrice": "44490000",
+        "discountAmount": "10500000",
+        "discountPercent": 19.09,
+        "sellPrice": "54990000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_trung_bay",
+      "sellable": false
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "200400304",
+      "skuId": "200400304",
+      "name": "Laptop Acer Aspire 5 A514-53-3821 (NX.HUSSV.001) (14\" FHD/i3-1005G1/4GB/256GB SSD/Intel UHD/Win10/1.5kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/oBlqiyaUA8D5DdgGlUsNWkOT_o5T3TLkvNyB45Vm7eXjVpiOnfAAhwN5pfl_P2ej0UZCFtN4qLvs0EqYDvA",
+      "tags": [
+        "acer-day-t10"
+      ],
+      "brand": {
+        "code": "acer",
+        "name": "ACER",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-01",
+          "name": "Laptop Acer",
+          "id": 2
+        },
+        {
+          "code": "01-N001-01-02",
+          "name": "Laptop Acer Win",
+          "id": 6
+        },
+        {
+          "code": "01-N001-01-02-01",
+          "name": "Laptop Acer Win 1.1",
+          "id": 7
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [
+        {
+          "code": "014",
+          "name": "Máy tính và thiết bị văn phòng",
+          "id": 3947
+        },
+        {
+          "code": "014-001",
+          "name": "Máy tính và máy tính bảng",
+          "id": 3948
+        },
+        {
+          "code": "014-001-002",
+          "name": "Laptop",
+          "id": 3954
+        },
+        {
+          "code": "014-001-002-004",
+          "name": "Laptop Phổ thông",
+          "id": 3958
+        }
+      ],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 12,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-acer-aspire-5-a514533821-nxhussv001-i31005g1-bac",
+      "sellerSku": "200400304",
+      "canonical": "may-tinh-xach-tay-laptop-acer-aspire-5-a514533821-nxhussv001-i31005g1-bac-s200400304.html",
+      "uomCode": "58",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "13190000",
+        "terminalPrice": "13190000",
+        "latestPrice": "13190000",
+        "discountAmount": "0",
+        "discountPercent": 0,
+        "sellPrice": "13190000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_trung_bay",
+      "sellable": false
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "200601181",
+      "skuId": "200601181",
+      "name": "Laptop MICROSOFT Surface Pro 7 QWT-00001 ( 12.3\" Intel Core i3-1005G1/4GB/128GB SSD/Windows 10/0.8kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/Z3_SK9nE4XHLcCMOzhpjV8_WjFL-_ugIfXa5ZyrfEY2AdNEH-wh5q1qoX-y_JANDrS71I4-kqxd9HmXkm-Hb",
+      "tags": [],
+      "brand": {
+        "code": "microsoft",
+        "name": "MICROSOFT",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-99",
+          "name": "Other laptop/Laptop Khác",
+          "id": 80
+        },
+        {
+          "code": "01-N001-99-02",
+          "name": "Other laptop 2.1/Laptop Khác 2.1",
+          "id": 82
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [
+        {
+          "code": "014",
+          "name": "Máy tính và thiết bị văn phòng",
+          "id": 3947
+        },
+        {
+          "code": "014-001",
+          "name": "Máy tính và máy tính bảng",
+          "id": 3948
+        },
+        {
+          "code": "014-001-002",
+          "name": "Laptop",
+          "id": 3954
+        },
+        {
+          "code": "014-001-002-003",
+          "name": "Laptop Cao cấp",
+          "id": 3957
+        }
+      ],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 12,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-microsoft-surface-pro-7-123-qwt00001-i31005g14gbssd128gb-bac",
+      "sellerSku": "200601181",
+      "canonical": "may-tinh-xach-tay-laptop-microsoft-surface-pro-7-123-qwt00001-i31005g14gbssd128gb-bac-s200601181.html",
+      "uomCode": "58",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [
+      {
+        "id": 106409,
+        "isDefault": false,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": {
+            "percent": 0,
+            "maxAmount": 0,
+            "flat": 700000,
+            "maxAmountPerOrder": null
+          },
+          "gifts": [],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Giảm giá",
+        "endTimestampSec": "1640969999",
+        "name": "Giá Tốt mỗi ngày - 2577",
+        "type": "",
+        "landing": null
+      }
+    ],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "23990000",
+        "terminalPrice": "23990000",
+        "latestPrice": "23290000",
+        "discountAmount": "700000",
+        "discountPercent": 2.92,
+        "sellPrice": "23990000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_sap_het",
+      "sellable": true
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "200801021",
+      "skuId": "200801021",
+      "name": "Laptop ASUS ROG Strix G15 G512 IAL001T ( 15.6\" Full HD/ 144Hz/Intel Core i7-10750H/8GB/512GB SSD/NVIDIA GeForce GTX 1650Ti/Win 10 Home SL)",
+      "imageUrl": "https://lh3.googleusercontent.com/LFU_8k8neUWWvxxhF726xtncbZWyGmINchYDeEbBBKG-ic7hkzu5ZLYqnYUZgUwGu-Y8Lr36-C9hnv9Bfw",
+      "tags": [
+        "promotion-laptop-asgaming-w2-12-2020",
+        "may-intel-gaming-laptop",
+        "promotion-laptop-super-sale-w3-12-2020"
+      ],
+      "brand": {
+        "code": "asus",
+        "name": "ASUS",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-02",
+          "name": "Laptop Asus",
+          "id": 9
+        },
+        {
+          "code": "01-N001-02-02",
+          "name": "Laptop Asus Win",
+          "id": 13
+        },
+        {
+          "code": "01-N001-02-02-01",
+          "name": "Laptop Asus Win 1.1",
+          "id": 14
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [
+        {
+          "code": "014",
+          "name": "Máy tính và thiết bị văn phòng",
+          "id": 3947
+        },
+        {
+          "code": "014-001",
+          "name": "Máy tính và máy tính bảng",
+          "id": 3948
+        },
+        {
+          "code": "014-001-002",
+          "name": "Laptop",
+          "id": 3954
+        },
+        {
+          "code": "014-001-002-002",
+          "name": "Laptop Gaming",
+          "id": 3956
+        }
+      ],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 24,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-asus-rog-strix-g15-g512-ial001t-i7-10750h-den",
+      "sellerSku": "200801021",
+      "canonical": "may-tinh-xach-tay-laptop-asus-rog-strix-g15-g512-ial001t-i7-10750h-den-s200801021.html",
+      "uomCode": "81",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [
+      {
+        "id": 106167,
+        "isDefault": true,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": null,
+          "gifts": [
+            {
+              "sku": "1207994",
+              "name": "Túi đựng laptop 15''",
+              "imageUrl": "https://lh3.googleusercontent.com/8TYtx-F0wLPEsufDd-N2y4txkDy3dxxjipjA6k5DjccQhwtdK_6Mx0YPuSUZF3bOEGG5-hP8-MFNReb4X0k",
+              "quantity": 1,
+              "maxQuantityPerOrder": null,
+              "quantityDecimal": 1,
+              "maxQuantityPerOrderDecimal": null
+            }
+          ],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Tặng quà",
+        "endTimestampSec": "1640969999",
+        "name": "[Quà tặng] - Túi đựng laptop 15 [01.21] - 3",
+        "type": "",
+        "landing": null
+      }
+    ],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "28990000",
+        "terminalPrice": "28990000",
+        "latestPrice": "28990000",
+        "discountAmount": "0",
+        "discountPercent": 0,
+        "sellPrice": "28990000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_ban",
+      "sellable": true
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "200900245",
+      "skuId": "200900245",
+      "name": "Laptop MSI GE66 Raider 10SFS 474VN ( 15.6\" Full HD/ 300Hz/Intel Core i7-10875H/32GB/1TB SSD/NVIDIA GeForce RTX 2070 Super/Win 10 Home)",
+      "imageUrl": "https://lh3.googleusercontent.com/1ZeknueGKuCyPRgUD0AFeqdyDv7TOwlmPsrPHWOBaRayeJ7o5vYmKv4tkfjsNiAPxlXxVbC5vpz0nnR5Es8",
+      "tags": [],
+      "brand": {
+        "code": "msi",
+        "name": "MSI",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-08",
+          "name": "Laptop MSI",
+          "id": 47
+        },
+        {
+          "code": "01-N001-08-02",
+          "name": "Laptop MSI Win",
+          "id": 50
+        },
+        {
+          "code": "01-N001-08-02-01",
+          "name": "Laptop MSI Win 1.1",
+          "id": 51
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [
+        {
+          "code": "014",
+          "name": "Máy tính và thiết bị văn phòng",
+          "id": 3947
+        },
+        {
+          "code": "014-001",
+          "name": "Máy tính và máy tính bảng",
+          "id": 3948
+        },
+        {
+          "code": "014-001-002",
+          "name": "Laptop",
+          "id": 3954
+        },
+        {
+          "code": "014-001-002-002",
+          "name": "Laptop Gaming",
+          "id": 3956
+        }
+      ],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 24,
+        "description": "Bảo hành 12 tháng với pin và phụ kiện"
+      },
+      "slug": "may-tinh-xach-tay-laptop-msi-raider-ge66-10sfs-474vn-i7-10875h-xam-bac",
+      "sellerSku": "200900245",
+      "canonical": "may-tinh-xach-tay-laptop-msi-raider-ge66-10sfs-474vn-i7-10875h-xam-bac-s200900245.html",
+      "uomCode": "81",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [
+      {
+        "id": 129709,
+        "isDefault": false,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": {
+            "percent": 0,
+            "maxAmount": 0,
+            "flat": 8000000,
+            "maxAmountPerOrder": null
+          },
+          "gifts": [],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Giảm giá",
+        "endTimestampSec": "1640969999",
+        "name": "Giá Tốt Mỗi Ngày- 2696",
+        "type": "",
+        "landing": null
+      }
+    ],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "59990000",
+        "terminalPrice": "59990000",
+        "latestPrice": "51990000",
+        "discountAmount": "8000000",
+        "discountPercent": 13.34,
+        "sellPrice": "59990000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_ban",
+      "sellable": true
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "200900874",
+      "skuId": "200900874",
+      "name": "Laptop HP 340s G7 240Q4PA ( 14\" Full HD/Intel Core i3-1005G1/4GB/256GB SSD/Windows 10 Home SL 64-bit/1.4kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/2Krja-dQLs3pYNCwWPhuqd90Z_Bk8-H-Tj83xYG3GEszshnj0RMAMuF4gQwMzelkDkTTeFbrOyQoOWN1RPo",
+      "tags": [
+        "promotion-tet-laptop-hp-2021",
+        "promotion-tet-hp-2021"
+      ],
+      "brand": {
+        "code": "hp",
+        "name": "HP",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-05",
+          "name": "Laptop Compaq - HP",
+          "id": 30
+        },
+        {
+          "code": "01-N001-05-02",
+          "name": "Laptop Compaq - Hp Win",
+          "id": 34
+        },
+        {
+          "code": "01-N001-05-02-01",
+          "name": "Laptop Compaq - Hp Win 1.1",
+          "id": 35
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [
+        {
+          "code": "014",
+          "name": "Máy tính và thiết bị văn phòng",
+          "id": 3947
+        },
+        {
+          "code": "014-001",
+          "name": "Máy tính và máy tính bảng",
+          "id": 3948
+        },
+        {
+          "code": "014-001-002",
+          "name": "Laptop",
+          "id": 3954
+        },
+        {
+          "code": "014-001-002-004",
+          "name": "Laptop Phổ thông",
+          "id": 3958
+        }
+      ],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 12,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-hp-340s-g7-240q4pa-i3-1005g1-xam",
+      "sellerSku": "200900874",
+      "canonical": "may-tinh-xach-tay-laptop-hp-340s-g7-240q4pa-i3-1005g1-xam-s200900874.html",
+      "uomCode": "81",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [
+      {
+        "id": 191151,
+        "isDefault": false,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": {
+            "percent": 0,
+            "maxAmount": 0,
+            "flat": 100000,
+            "maxAmountPerOrder": null
+          },
+          "gifts": [],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Giá Tốt Mỗi Ngày",
+        "endTimestampSec": "1634489999",
+        "name": "Giá Tốt Mỗi Ngày - 5923",
+        "type": "",
+        "landing": null
+      }
+    ],
+    "totalAvailable": 2,
+    "prices": [
+      {
+        "supplierRetailPrice": "12990000",
+        "terminalPrice": "12990000",
+        "latestPrice": "12890000",
+        "discountAmount": "100000",
+        "discountPercent": 0.77,
+        "sellPrice": "12990000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_sap_het",
+      "sellable": true
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "201000480",
+      "skuId": "201000480",
+      "name": "Laptop Dell Inspiron 15 7501 X3MRY1 ( 15.6\" Full HD/Intel Core i7-10750H/8GB/512GB SSD/NVIDIA GeForce GTX 1650Ti/Windows 10 Home SL 64-bit/1.8kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/S9cHWO6YU-b77SnWyBKVWUu8V4FGwxAQAlElZA0FoVk44Q3105kkvobplm_SPL6UYyJesPUf3_UWUeHeytQ",
+      "tags": [],
+      "brand": {
+        "code": "dell",
+        "name": "Dell",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-03",
+          "name": "Laptop Dell",
+          "id": 16
+        },
+        {
+          "code": "01-N001-03-02",
+          "name": "Laptop Dell Win",
+          "id": 20
+        },
+        {
+          "code": "01-N001-03-02-01",
+          "name": "Laptop Dell Win 1.1",
+          "id": 21
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [
+        {
+          "code": "014",
+          "name": "Máy tính và thiết bị văn phòng",
+          "id": 3947
+        },
+        {
+          "code": "014-001",
+          "name": "Máy tính và máy tính bảng",
+          "id": 3948
+        },
+        {
+          "code": "014-001-002",
+          "name": "Laptop",
+          "id": 3954
+        },
+        {
+          "code": "014-001-002-002",
+          "name": "Laptop Gaming",
+          "id": 3956
+        }
+      ],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 12,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-dell-inspiron-15-7501-7501-x3mry1-i7-10750h-bac",
+      "sellerSku": "201000480",
+      "canonical": "may-tinh-xach-tay-laptop-dell-inspiron-15-7501-7501-x3mry1-i7-10750h-bac-s201000480.html",
+      "uomCode": "81",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [
+      {
+        "id": 183623,
+        "isDefault": false,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": {
+            "percent": 0,
+            "maxAmount": 0,
+            "flat": 900000,
+            "maxAmountPerOrder": null
+          },
+          "gifts": [],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Giá tốt mỗi ngày",
+        "endTimestampSec": "1640969999",
+        "name": "Giá Tốt Mỗi Ngày - 5686",
+        "type": "",
+        "landing": null
+      }
+    ],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "31990000",
+        "terminalPrice": "31990000",
+        "latestPrice": "31090000",
+        "discountAmount": "900000",
+        "discountPercent": 2.81,
+        "sellPrice": "31990000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_sap_het",
+      "sellable": true
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "201201496",
+      "skuId": "201201496",
+      "name": "Laptop ASUS Zenbook UX363EA- HP130T ( 13.3 inch/Full HD/Intel EVO Core i5-1135G7/8GB/512GB SSD/Windows 10 Home 64-bit/1.3kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/Fuq0U3tS6kLgZ1B0aMlLuHkxsXvaztB3kl8WFzmFQ2n1wbxiGDOtm9IfTlF1k2QnnLOJdf7E-a_515Lf2rxM4fxfAI6OOnsW",
+      "tags": [
+        "may-intel-gaming-laptop",
+        "laptop-intel-11th",
+        "laptop-intel-core-11th",
+        "laptop-intel-evo"
+      ],
+      "brand": {
+        "code": "asus",
+        "name": "ASUS",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-02",
+          "name": "Laptop Asus",
+          "id": 9
+        },
+        {
+          "code": "01-N001-02-02",
+          "name": "Laptop Asus Win",
+          "id": 13
+        },
+        {
+          "code": "01-N001-02-02-01",
+          "name": "Laptop Asus Win 1.1",
+          "id": 14
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [
+        {
+          "code": "014",
+          "name": "Máy tính và thiết bị văn phòng",
+          "id": 3947
+        },
+        {
+          "code": "014-001",
+          "name": "Máy tính và máy tính bảng",
+          "id": 3948
+        },
+        {
+          "code": "014-001-002",
+          "name": "Laptop",
+          "id": 3954
+        },
+        {
+          "code": "014-001-002-003",
+          "name": "Laptop Cao cấp",
+          "id": 3957
+        }
+      ],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 24,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-asus-zenbook-ux363ea-hp130t-i5-1135g7-xam",
+      "sellerSku": "201201496",
+      "canonical": "may-tinh-xach-tay-laptop-asus-zenbook-ux363ea-hp130t-i5-1135g7-xam-s201201496.html",
+      "uomCode": "57",
+      "uomRatio": 1,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [
+      {
+        "id": 182467,
+        "isDefault": false,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": {
+            "percent": 0,
+            "maxAmount": 0,
+            "flat": 500000,
+            "maxAmountPerOrder": null
+          },
+          "gifts": [],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Giảm giá",
+        "endTimestampSec": "1640969999",
+        "name": "Giá Tốt Mỗi Ngày- 3443 v2",
+        "type": "",
+        "landing": null
+      }
+    ],
+    "totalAvailable": 5,
+    "prices": [
+      {
+        "supplierRetailPrice": "27990000",
+        "terminalPrice": "27990000",
+        "latestPrice": "27490000",
+        "discountAmount": "500000",
+        "discountPercent": 1.79,
+        "sellPrice": "27990000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_sap_het",
+      "sellable": true
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "210200888",
+      "skuId": "210200888",
+      "name": "Laptop MSI Prestige 14 A11SCX 282VN ( 14\" Full HD/Intel Core i7-1185G7/8GB/512GB SSD/NVIDIA GeForce GTX 1650/Windows 10 Home 64-bit/1.3kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/072n0Ow2881gu92pFz7s0UoqX1SnvBEMfEU2QXTq0jwNQNt8uwd7xdDPVkk97Pcs0aJ5C649p5A68aEcLgvUxYNJ5mXe8ZR5",
+      "tags": [
+        "laptop-intel-11th",
+        "laptop-intel-core-11th"
+      ],
+      "brand": {
+        "code": "msi",
+        "name": "MSI",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-08",
+          "name": "Laptop MSI",
+          "id": 47
+        },
+        {
+          "code": "01-N001-08-02",
+          "name": "Laptop MSI Win",
+          "id": 50
+        },
+        {
+          "code": "01-N001-08-02-01",
+          "name": "Laptop MSI Win 1.1",
+          "id": 51
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [
+        {
+          "code": "014",
+          "name": "Máy tính và thiết bị văn phòng",
+          "id": 3947
+        },
+        {
+          "code": "014-001",
+          "name": "Máy tính và máy tính bảng",
+          "id": 3948
+        },
+        {
+          "code": "014-001-002",
+          "name": "Laptop",
+          "id": 3954
+        },
+        {
+          "code": "014-001-002-002",
+          "name": "Laptop Gaming",
+          "id": 3956
+        }
+      ],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 24,
+        "description": "Bảo hành 12 tháng với pin và phụ kiện"
+      },
+      "slug": "may-tinh-xach-tay-laptop-msi-prestige-14-a11scx-282vn-i7-1165g7-xam",
+      "sellerSku": "210200888",
+      "canonical": "may-tinh-xach-tay-laptop-msi-prestige-14-a11scx-282vn-i7-1165g7-xam-s210200888.html",
+      "uomCode": "57",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [
+      {
+        "id": 162382,
+        "isDefault": false,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": {
+            "percent": 0,
+            "maxAmount": 0,
+            "flat": 2600000,
+            "maxAmountPerOrder": null
+          },
+          "gifts": [],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Giá Tốt Mỗi Ngày",
+        "endTimestampSec": "1640969999",
+        "name": "Giá Tốt Mỗi Ngày- 2802 v2",
+        "type": "",
+        "landing": null
+      }
+    ],
+    "totalAvailable": 2,
+    "prices": [
+      {
+        "supplierRetailPrice": "32990000",
+        "terminalPrice": "32990000",
+        "latestPrice": "30390000",
+        "discountAmount": "2600000",
+        "discountPercent": 7.88,
+        "sellPrice": "32990000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_sap_het",
+      "sellable": true
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "210300945",
+      "skuId": "210300945",
+      "name": "Laptop HP 340s G7 (2G5C6PA) ( 14\" Full HD/Intel Core i7-1065G7/4GB/256GB SSD/Windows 10 Home SL 64-bit/1.4kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/NzG14z8-1it20a3mBIr6ydCwcBpGJrTJko4mD9XnZjsreFyeuE7Fq4OsU96dqFUwyXclvaQCXRPeD3PWToQ6X2lv3g-S353E",
+      "tags": [
+        "laptop-hp-april-sale"
+      ],
+      "brand": {
+        "code": "hp",
+        "name": "HP",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-05",
+          "name": "Laptop Compaq - HP",
+          "id": 30
+        },
+        {
+          "code": "01-N001-05-02",
+          "name": "Laptop Compaq - Hp Win",
+          "id": 34
+        },
+        {
+          "code": "01-N001-05-02-01",
+          "name": "Laptop Compaq - Hp Win 1.1",
+          "id": 35
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [
+        {
+          "code": "014",
+          "name": "Máy tính và thiết bị văn phòng",
+          "id": 3947
+        },
+        {
+          "code": "014-001",
+          "name": "Máy tính và máy tính bảng",
+          "id": 3948
+        },
+        {
+          "code": "014-001-002",
+          "name": "Laptop",
+          "id": 3954
+        },
+        {
+          "code": "014-001-002-004",
+          "name": "Laptop Phổ thông",
+          "id": 3958
+        }
+      ],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 12,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-hp-340s-g7-2g5c6pa-i7-1065g7-xam",
+      "sellerSku": "210300945",
+      "canonical": "may-tinh-xach-tay-laptop-hp-340s-g7-2g5c6pa-i7-1065g7-xam-s210300945.html",
+      "uomCode": "81",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [
+      {
+        "id": 116659,
+        "isDefault": true,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": null,
+          "gifts": [
+            {
+              "sku": "1207994",
+              "name": "Túi đựng laptop 15''",
+              "imageUrl": "https://lh3.googleusercontent.com/8TYtx-F0wLPEsufDd-N2y4txkDy3dxxjipjA6k5DjccQhwtdK_6Mx0YPuSUZF3bOEGG5-hP8-MFNReb4X0k",
+              "quantity": 1,
+              "maxQuantityPerOrder": null,
+              "quantityDecimal": 1,
+              "maxQuantityPerOrderDecimal": null
+            }
+          ],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Tặng quà",
+        "endTimestampSec": "1640969999",
+        "name": "[Quà tặng] - Túi đựng laptop 15 [03.21]",
+        "type": "",
+        "landing": null
+      }
+    ],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "19690000",
+        "terminalPrice": "19690000",
+        "latestPrice": "19690000",
+        "discountAmount": "0",
+        "discountPercent": 0,
+        "sellPrice": "19690000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_sap_het",
+      "sellable": true
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "210302328",
+      "skuId": "210302328",
+      "name": "Laptop ASUS ROG Flow X13 GV301QH-K6054T ( 13.4\" WUXGA/ 120Hz/AMD Ryzen 7 5800HS/16GB/512GB SSD/NVIDIA GeForce GTX 1650/Windows 10 Home 64-bit/1.3kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/bWhU0mwVhjLtkE6Rio6x06AP_KGc3roINsHFkRK9PqghM4CIzU2QmhLdPvIrsq4zzkRlaIArMuwlqvBCcmMK-8DlzfHBteRI",
+      "tags": [],
+      "brand": {
+        "code": "asus",
+        "name": "ASUS",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-02",
+          "name": "Laptop Asus",
+          "id": 9
+        },
+        {
+          "code": "01-N001-02-02",
+          "name": "Laptop Asus Win",
+          "id": 13
+        },
+        {
+          "code": "01-N001-02-02-01",
+          "name": "Laptop Asus Win 1.1",
+          "id": 14
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [
+        {
+          "code": "014",
+          "name": "Máy tính và thiết bị văn phòng",
+          "id": 3947
+        },
+        {
+          "code": "014-001",
+          "name": "Máy tính và máy tính bảng",
+          "id": 3948
+        },
+        {
+          "code": "014-001-002",
+          "name": "Laptop",
+          "id": 3954
+        },
+        {
+          "code": "014-001-002-002",
+          "name": "Laptop Gaming",
+          "id": 3956
+        }
+      ],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 24,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-asus-rog-flow-x13-gv301qh-k6054t-amd-ryzen-7-5800hs-den",
+      "sellerSku": "210302328",
+      "canonical": "may-tinh-xach-tay-laptop-asus-rog-flow-x13-gv301qh-k6054t-amd-ryzen-7-5800hs-den-s210302328.html",
+      "uomCode": "58",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "34990000",
+        "terminalPrice": "34990000",
+        "latestPrice": "34990000",
+        "discountAmount": "0",
+        "discountPercent": 0,
+        "sellPrice": "34990000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_trung_bay",
+      "sellable": false
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "210400696",
+      "skuId": "210400696",
+      "name": "Laptop ACER Nitro 5 AN515-45-R9SC (NH.QBRSV.001) ( 15.6\" Full HD/ 144Hz/Ryzen 7 5800H/8GB/512GB SSD/NVIDIA GeForce RTX 3070/Windows 10 Home 64-bit/2.2kg)",
+      "imageUrl": "https://lh3.googleusercontent.com/c8lEMABOL3Q8i2NxuiK306ID3gnSts2d7h67L-vOfU92Mv0neVYVDGh36vFfQNM3rMG8AM48hwVCjIGqi-NwO1p8nHJ6vb9w",
+      "tags": [],
+      "brand": {
+        "code": "acer",
+        "name": "ACER",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-01",
+          "name": "Laptop Acer",
+          "id": 2
+        },
+        {
+          "code": "01-N001-01-02",
+          "name": "Laptop Acer Win",
+          "id": 6
+        },
+        {
+          "code": "01-N001-01-02-01",
+          "name": "Laptop Acer Win 1.1",
+          "id": 7
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [
+        {
+          "code": "014",
+          "name": "Máy tính và thiết bị văn phòng",
+          "id": 3947
+        },
+        {
+          "code": "014-001",
+          "name": "Máy tính và máy tính bảng",
+          "id": 3948
+        },
+        {
+          "code": "014-001-002",
+          "name": "Laptop",
+          "id": 3954
+        },
+        {
+          "code": "014-001-002-003",
+          "name": "Laptop Cao cấp",
+          "id": 3957
+        }
+      ],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 12,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-acer-nitro-5-an515-45-r9sc-nh-qbrsv-001-amd-ryzen-7-5800h-den",
+      "sellerSku": "210400696",
+      "canonical": "may-tinh-xach-tay-laptop-acer-nitro-5-an515-45-r9sc-nh-qbrsv-001-amd-ryzen-7-5800h-den-s210400696.html",
+      "uomCode": "58",
+      "uomRatio": 0,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [
+      {
+        "id": 149407,
+        "isDefault": false,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": {
+            "percent": 0,
+            "maxAmount": 0,
+            "flat": 3000000,
+            "maxAmountPerOrder": null
+          },
+          "gifts": [],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Giảm giá",
+        "endTimestampSec": "1640969999",
+        "name": "Giá Tốt Mỗi Ngày- 4137",
+        "type": "",
+        "landing": null
+      }
+    ],
+    "totalAvailable": 5,
+    "prices": [
+      {
+        "supplierRetailPrice": "39990000",
+        "terminalPrice": "39990000",
+        "latestPrice": "36990000",
+        "discountAmount": "3000000",
+        "discountPercent": 7.5,
+        "sellPrice": "39990000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_sap_het",
+      "sellable": true
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "210403831",
+      "skuId": "210403831",
+      "name": "Laptop Acer Spin 5 SP513-52N-556V (NX.GR7SV.004) (Xám) - Hàng trưng bày",
+      "imageUrl": "https://lh3.googleusercontent.com/GmnLDmCHndN0ZR_I5AAlgymoeQrSNka49UTCR7PuSDGPtRAKUFYhmpe3KXfYJsLMVTYm9hxLQpQbXmx2IfvXORq-4Jsh9h4Gzg",
+      "tags": [],
+      "brand": {
+        "code": "acer",
+        "name": "ACER",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-97",
+          "name": "Used Laptop/Laptop Đã Qua Sử Dụng",
+          "id": 20404
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 0,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-acer-spin-5-sp513-52n-556v-nx-gr7sv-004-xam-hang-trung-bay",
+      "sellerSku": "210403831",
+      "canonical": "may-tinh-xach-tay-laptop-acer-spin-5-sp513-52n-556v-nx-gr7sv-004-xam-hang-trung-bay-s210403831.html",
+      "uomCode": "81",
+      "uomRatio": 1,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [
+      {
+        "id": 157891,
+        "isDefault": false,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": {
+            "percent": 0,
+            "maxAmount": 0,
+            "flat": 5375000,
+            "maxAmountPerOrder": null
+          },
+          "gifts": [],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Thanh lý trưng bày",
+        "endTimestampSec": "1635699599",
+        "name": "Thanh Lý Outlet - [01.08-31.10] - S/N: NXGR7SV0048520494D6600",
+        "type": "",
+        "landing": null
+      }
+    ],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "21499000",
+        "terminalPrice": "21499000",
+        "latestPrice": "16124000",
+        "discountAmount": "5375000",
+        "discountPercent": 25,
+        "sellPrice": "21499000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_trung_bay",
+      "sellable": false
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "210403864",
+      "skuId": "210403864",
+      "name": "Laptop Acer Swift 5 SF514-54T-55TT (NX.HLGSV.002) (i5-1035G1) (Trắng) - Hàng trưng bày",
+      "imageUrl": "https://lh3.googleusercontent.com/Z1hiN_N4w4tuTI9wFNj1T4xXEl-Zg7ixOyFvz_4e5EEry1JGyg9Ny7jNcqJUMEyu-inG0swXItRkKhjXCwWcVYTe9bPCPFlc",
+      "tags": [],
+      "brand": {
+        "code": "acer",
+        "name": "ACER",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-97",
+          "name": "Used Laptop/Laptop Đã Qua Sử Dụng",
+          "id": 20404
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 0,
+        "description": "Hết hạn bảo hành: 29-07-2021"
+      },
+      "slug": "may-tinh-xach-tay-laptop-acer-swift-5-sf514-54t-55tt-nx-hlgsv-002-i5-1035g1-trang-hang-trung-bay",
+      "sellerSku": "210403864",
+      "canonical": "may-tinh-xach-tay-laptop-acer-swift-5-sf514-54t-55tt-nx-hlgsv-002-i5-1035g1-trang-hang-trung-bay-s210403864.html",
+      "uomCode": "81",
+      "uomRatio": 1,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [
+      {
+        "id": 157933,
+        "isDefault": false,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": {
+            "percent": 0,
+            "maxAmount": 0,
+            "flat": 7017000,
+            "maxAmountPerOrder": null
+          },
+          "gifts": [],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Thanh lý trưng bày",
+        "endTimestampSec": "1635699599",
+        "name": "Thanh Lý Outlet - [01.08-31.10] - S/N: NXHLGSV002943053AE4S00",
+        "type": "",
+        "landing": null
+      }
+    ],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "25990000",
+        "terminalPrice": "25990000",
+        "latestPrice": "18973000",
+        "discountAmount": "7017000",
+        "discountPercent": 27,
+        "sellPrice": "25990000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_trung_bay",
+      "sellable": false
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "210403958",
+      "skuId": "210403958",
+      "name": "Laptop Acer Swift 3 SF314-59-5178 (NX.A0RSV.001) (i5-1135G7) (Hồng) - Hàng trưng bày",
+      "imageUrl": "https://lh3.googleusercontent.com/aCHhOcOk0tmjsgCcV9TSEE6F_J5MCO_wM2oF350WqMdkHou9jjrUjku4BJsEtvqQ5k7hvQUFBGIdXYjM75pVPceNSdene9gf",
+      "tags": [],
+      "brand": {
+        "code": "acer",
+        "name": "ACER",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-97",
+          "name": "Used Laptop/Laptop Đã Qua Sử Dụng",
+          "id": 20404
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 12,
+        "description": ""
+      },
+      "slug": "may-tinh-xach-tay-laptop-acer-swift-3-sf314-59-5178-nx-a0rsv-001-i5-1135g7-hong-hang-trung-bay",
+      "sellerSku": "210403958",
+      "canonical": "may-tinh-xach-tay-laptop-acer-swift-3-sf314-59-5178-nx-a0rsv-001-i5-1135g7-hong-hang-trung-bay-s210403958.html",
+      "uomCode": "81",
+      "uomRatio": 1,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [
+      {
+        "id": 157965,
+        "isDefault": false,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": {
+            "percent": 0,
+            "maxAmount": 0,
+            "flat": 2339000,
+            "maxAmountPerOrder": null
+          },
+          "gifts": [],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Thanh lý trưng bày",
+        "endTimestampSec": "1635699599",
+        "name": "Thanh Lý Outlet - [01.08-31.10] - S/N: NXA0RSV001053003B03400",
+        "type": "",
+        "landing": null
+      }
+    ],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "19490000",
+        "terminalPrice": "19490000",
+        "latestPrice": "17151000",
+        "discountAmount": "2339000",
+        "discountPercent": 12,
+        "sellPrice": "19490000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_trung_bay",
+      "sellable": false
+    }
+  },
+  {
+    "productInfo": {
+      "sku": "210403968",
+      "skuId": "210403968",
+      "name": "Laptop Microsoft Surface Pro 7 12.3 inch PVR-00026 (i5-1035G4/8GB/SSD256GB) (Đen) - Hàng trưng bày",
+      "imageUrl": "https://lh3.googleusercontent.com/FVbMh8FySc7f_cUL-OxB2yNxd0-8D2zEPSbSyx6hIVog4PAmYCB31fgyXY495wSA1UOvSfScfAfNwd3YPy4Z4qdlm7nf00X06w",
+      "tags": [],
+      "brand": {
+        "code": "microsoft",
+        "name": "MICROSOFT",
+        "logo": ""
+      },
+      "categories": [
+        {
+          "code": "NGH01",
+          "name": "Laptop / Apple",
+          "id": 1601
+        },
+        {
+          "code": "01-N001",
+          "name": "Laptop",
+          "id": 1
+        },
+        {
+          "code": "01-N001-97",
+          "name": "Used Laptop/Laptop Đã Qua Sử Dụng",
+          "id": 20404
+        }
+      ],
+      "seller": {
+        "id": 1,
+        "name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ",
+        "displayName": "Phong Vũ",
+        "logo": "https://lh3.googleusercontent.com/qOnchEYD7No58bjEQs5pf_05IV-0DmoaCmEFXD007VHs5cn16LZ6PC98IlY3OiBL9UXsEwNzwiVHRrvSDMQ"
+      },
+      "provider": {
+        "id": 1
+      },
+      "masterCategories": [],
+      "tax": {
+        "taxOut": 10,
+        "taxOutCode": "10"
+      },
+      "warranty": {
+        "months": 0,
+        "description": "Hết hạn bảo hành: 05/10/2022"
+      },
+      "slug": "may-tinh-xach-tay-laptop-microsoft-surface-pro-7-12-3-pvr-00026-i5-1035g4-8gb-ssd256gb-den-hang-trung-bay",
+      "sellerSku": "210403968",
+      "canonical": "may-tinh-xach-tay-laptop-microsoft-surface-pro-7-12-3-pvr-00026-i5-1035g4-8gb-ssd256gb-den-hang-trung-bay-s210403968.html",
+      "uomCode": "58",
+      "uomRatio": 1,
+      "uomName": "",
+      "manufacturer": null
+    },
+    "promotions": [
+      {
+        "id": 157974,
+        "isDefault": false,
+        "condition": {
+          "coupon": "",
+          "orderValueMin": null,
+          "orderValueMax": null,
+          "blockSize": 1,
+          "minQuantity": 1,
+          "blockSizeDecimal": 1,
+          "minQuantityDecimal": 1,
+          "groupBuyInfo": null
+        },
+        "benefit": {
+          "discount": {
+            "percent": 0,
+            "maxAmount": 0,
+            "flat": 3594000,
+            "maxAmountPerOrder": null
+          },
+          "gifts": [],
+          "voucher": null,
+          "bulkDiscount": null
+        },
+        "applyOn": "product",
+        "description": "Thanh lý trưng bày",
+        "endTimestampSec": "1635699599",
+        "name": "Thanh Lý Outlet - [01.08-31.10] - S/N: 53643794653",
+        "type": "",
+        "landing": null
+      }
+    ],
+    "totalAvailable": 1,
+    "prices": [
+      {
+        "supplierRetailPrice": "29950000",
+        "terminalPrice": "29950000",
+        "latestPrice": "26356000",
+        "discountAmount": "3594000",
+        "discountPercent": 12,
+        "sellPrice": "29950000"
+      }
+    ],
+    "flashSales": [],
+    "status": {
+      "sellingCode": "hang_trung_bay",
+      "sellable": false
+    }
+  }
+]
