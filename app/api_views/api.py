@@ -5,7 +5,7 @@ from rest_framework.response import Response
 from app.models import Category, Product, Brand
 from app.models.user import User
 from app.serializers import CategoryFullSerializer, ProductSerializer, CategorySerializer, BrandSerializer, \
-    BrandFullSerializer, LoginSerializer
+    BrandFullSerializer, LoginSerializer, RegisterSerializer
 from app.utils import string_util
 
 
@@ -23,6 +23,17 @@ class LoginAPI(generics.GenericAPIView):
             raise exceptions.AuthenticationFailed('User not found.')
         serializer = self.get_serializer(c_user)
         return Response(serializer.data)
+
+
+class RegisterAPI(generics.GenericAPIView):
+    serializer_class = RegisterSerializer
+
+    def post(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
 class CategoryListAPI(generics.GenericAPIView):

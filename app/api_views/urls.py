@@ -12,6 +12,7 @@ urlpatterns = [
     # path('<str:pk>', PostOfCategoryAPI.as_view(), name='store_search'),
 
     path('login', LoginAPI.as_view(), name='login'),
+    path('register', RegisterAPI.as_view(), name='register'),
     path('admin/', include('app.api_views.admin.urls')),
     path('user/', include('app.api_views.user.urls')),
 ]

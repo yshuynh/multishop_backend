@@ -3,13 +3,13 @@ from app.utils.constants import USER_ROLE
 
 
 class User(models.Model):
-    username = models.CharField(max_length=64)
+    username = models.CharField(max_length=64, unique=True)
     password = models.TextField()
     email = models.CharField(max_length=64)
     role = models.CharField(max_length=16, default=USER_ROLE.USER, choices=USER_ROLE.choices())
 
     name = models.CharField(max_length=64, blank=True)
-    address = models.TextField()
+    address = models.TextField(blank=True)
     phone_number = models.CharField(max_length=16, blank=True)
     dob = models.DateField(null=True)
     created_at = models.DateTimeField(auto_now_add=True)

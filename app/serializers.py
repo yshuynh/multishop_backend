@@ -2,7 +2,7 @@ from rest_framework import serializers
 
 from app.models import Category, Product, Brand
 from app.models.user import User
-from app.utils import jwt_util
+from app.utils import jwt_util, string_util
 
 
 class LoginSerializer(serializers.ModelSerializer):
@@ -94,4 +94,32 @@ class UserSerializer(serializers.ModelSerializer):
         exclude = ('password',)
         extra_kwargs = {
             'id': {'read_only': True}
+        }
+
+
+class RegisterSerializer(serializers.ModelSerializer):
+    dob = serializers.DateField(input_formats=['%Y-%m-%d'])
+
+    class Meta:
+        model = User
+        fields = ('id', 'username', 'password', 'email', 'name', 'address', 'phone_number', 'dob')
+        extra_kwargs = {
+            'password': {'write_only': True},
+            'id': {'read_only': True},
+        }
+
+    def create(self, validated_data):
+        validated_data['password'] = string_util.encrypt_string(validated_data['password'])
+        instance = User.objects.create(**validated_data)
+        return instance
+
+
+class UserInfoSerializer(serializers.ModelSerializer):
+    dob = serializers.DateField(input_formats=['%Y-%m-%d'])
+
+    class Meta:
+        model = User
+        fields = ('id', 'email', 'name', 'address', 'phone_number', 'dob')
+        extra_kwargs = {
+            'id': {'read_only': True},
         }
