@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 from .api import *
 
 urlpatterns = [
@@ -10,4 +10,8 @@ urlpatterns = [
     path('brands/<str:pk>', BrandSingleAPI.as_view(), name='brand_single'),
     # path('single/<str:pk>', CategoryDetailAPI.as_view(), name='category_detail'),
     # path('<str:pk>', PostOfCategoryAPI.as_view(), name='store_search'),
+
+    path('login', LoginAPI.as_view(), name='login'),
+    path('admin/', include('app.api_views.admin.urls')),
+    path('user/', include('app.api_views.user.urls')),
 ]

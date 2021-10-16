@@ -1,10 +1,28 @@
-from rest_framework import generics
+from rest_framework import generics, status, exceptions
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.response import Response
 
 from app.models import Category, Product, Brand
+from app.models.user import User
 from app.serializers import CategoryFullSerializer, ProductSerializer, CategorySerializer, BrandSerializer, \
-    BrandFullSerializer
+    BrandFullSerializer, LoginSerializer
+from app.utils import string_util
+
+
+class LoginAPI(generics.GenericAPIView):
+    serializer_class = LoginSerializer
+
+    def post(self, request, *args, **kwargs):
+        username = request.data.get('username')
+        password = request.data.get('password')
+        try:
+            c_user = User.objects.get(username=username)
+            if not string_util.check_encrypted_string(password, c_user.password):
+                raise exceptions.AuthenticationFailed('Incorrect password')
+        except User.DoesNotExist:
+            raise exceptions.AuthenticationFailed('User not found.')
+        serializer = self.get_serializer(c_user)
+        return Response(serializer.data)
 
 
 class CategoryListAPI(generics.GenericAPIView):

@@ -1,6 +1,19 @@
 from rest_framework import serializers
 
 from app.models import Category, Product, Brand
+from app.models.user import User
+from app.utils import jwt_util
+
+
+class LoginSerializer(serializers.ModelSerializer):
+    access_token = serializers.SerializerMethodField()
+
+    class Meta:
+        model = User
+        fields = ('access_token',)
+
+    def get_access_token(self, obj):
+        return jwt_util.extract_token(obj)
 
 
 class BrandFullSerializer(serializers.ModelSerializer):
@@ -73,3 +86,12 @@ class CategoryFullSerializer(serializers.ModelSerializer):
 
     # def to_representation(self, instance):
     #     data = super(CategoryFullSerializer, self).to_representation(instance)
+
+
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        exclude = ('password',)
+        extra_kwargs = {
+            'id': {'read_only': True}
+        }
