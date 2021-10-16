@@ -1,13 +1,15 @@
 import jwt
 from rest_framework import authentication, exceptions
 from rest_framework_jwt.settings import api_settings
-from app.models.user import User
+from app.models.user import User, NONE_USER
 from app.utils import jwt_util
 
 
 class JwtAuthentication(authentication.BaseAuthentication):
     def authenticate(self, request):
         jwt_value = self.get_jwt_value(request)
+        if jwt_value is None:
+            return (NONE_USER, None)
 
         try:
             payload = jwt_util.extract_payload(jwt_value)
