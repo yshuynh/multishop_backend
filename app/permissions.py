@@ -18,4 +18,4 @@ class UserPermission(permissions.BasePermission):
     """
 
     def has_permission(self, request, view):
-        return request.user.role == USER_ROLE.User
+        return request.user.role == USER_ROLE.USER

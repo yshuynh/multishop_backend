@@ -1,6 +1,7 @@
-from rest_framework import serializers
+from rest_framework import serializers, exceptions
 
 from app.models import Category, Product, Brand
+from app.models.rating import Rating, RatingResponse
 from app.models.user import User
 from app.utils import jwt_util, string_util
 
@@ -45,8 +46,42 @@ class BrandSerializer(serializers.ModelSerializer):
         }
 
 
+class RatingResponseSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = RatingResponse
+        fields = '__all__'
+        extra_kwargs = {
+            'id': {'read_only': True}
+        }
+
+
+class UserInfoLiteSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ('id', 'name')
+        extra_kwargs = {
+            'id': {'read_only': True},
+        }
+
+
+class ProductRatingsSerializer(serializers.ModelSerializer):
+    responses = serializers.SerializerMethodField()
+    user = UserInfoLiteSerializer()
+
+    class Meta:
+        model = Rating
+        exclude = ('product',)
+        extra_kwargs = {
+            'id': {'read_only': True}
+        }
+
+    def get_responses(self, obj):
+        return RatingResponseSerializer(obj.responses, many=True).data
+
+
 class ProductSerializer(serializers.ModelSerializer):
     brand = BrandSerializer()
+    avg_rating = serializers.SerializerMethodField()
 
     class Meta:
         model = Product
@@ -54,6 +89,35 @@ class ProductSerializer(serializers.ModelSerializer):
         extra_kwargs = {
             'id': {'read_only': True}
         }
+
+    def get_avg_rating(self, obj):
+        list_rate = obj.ratings.all().values_list('rate', flat=True)
+        if len(list_rate) == 0:
+            return 0
+        return round(float(sum(list_rate)/len(list_rate)), 1)
+
+
+class ProductDetailSerializer(serializers.ModelSerializer):
+    brand = BrandSerializer()
+    ratings = serializers.SerializerMethodField()
+    avg_rating = serializers.SerializerMethodField()
+
+    class Meta:
+        model = Product
+        fields = '__all__'
+        extra_kwargs = {
+            'id': {'read_only': True}
+        }
+
+    def get_ratings(self, obj):
+        serializer = ProductRatingsSerializer(obj.ratings, many=True)
+        return serializer.data
+
+    def get_avg_rating(self, obj):
+        list_rate = obj.ratings.all().values_list('rate', flat=True)
+        if len(list_rate) == 0:
+            return 0
+        return round(float(sum(list_rate)/len(list_rate)), 1)
 
 
 class CategorySerializer(serializers.ModelSerializer):
@@ -120,6 +184,15 @@ class UserInfoSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ('id', 'email', 'name', 'address', 'phone_number', 'dob')
+        extra_kwargs = {
+            'id': {'read_only': True},
+        }
+
+
+class UserRateProductSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Rating
+        fields = '__all__'
         extra_kwargs = {
             'id': {'read_only': True},
         }

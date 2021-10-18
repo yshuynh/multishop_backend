@@ -5,7 +5,7 @@ from rest_framework.response import Response
 from app.models import Category, Product, Brand
 from app.models.user import User
 from app.serializers import CategoryFullSerializer, ProductSerializer, CategorySerializer, BrandSerializer, \
-    BrandFullSerializer, LoginSerializer, RegisterSerializer
+    BrandFullSerializer, LoginSerializer, RegisterSerializer, ProductDetailSerializer
 from app.utils import string_util
 
 
@@ -79,7 +79,7 @@ class ProductListAPI(generics.GenericAPIView):
 
 class ProductSingleAPI(generics.GenericAPIView):
     queryset = Product.objects
-    serializer_class = ProductSerializer
+    serializer_class = ProductDetailSerializer
 
     def get(self, request, pk, *arg, **kwargs):
         c_product = self.get_object()
