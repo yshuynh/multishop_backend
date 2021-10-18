@@ -4,7 +4,7 @@ from app.authentication import JwtAuthentication
 from app.models.rating import Rating
 from app.models.user import User
 from app.permissions import UserPermission
-from app.serializers import UserSerializer, UserInfoSerializer, UserRateProductSerializer
+from app.serializers import UserSerializer, UserInfoSerializer, UserRateProductSerializer, RatingResponseSerializer
 
 
 class UserInfoAPI(generics.GenericAPIView):
@@ -53,3 +53,21 @@ class UserRateProductAPI(generics.GenericAPIView):
                 serializer.save()
                 return Response(serializer.data)
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+class UserResponseRatingAPI(generics.GenericAPIView):
+    queryset = Rating
+    serializer_class = RatingResponseSerializer
+    authentication_classes = (JwtAuthentication,)
+    permission_classes = (UserPermission,)
+
+    def post(self, request, pk, *arg, **kwargs):
+        c_rating = self.get_object()
+        data = request.data.copy()
+        data['rating'] = c_rating.id
+        data['user'] = self.request.user.id
+        serializer = self.get_serializer(data=data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

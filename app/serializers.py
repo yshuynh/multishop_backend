@@ -46,21 +46,23 @@ class BrandSerializer(serializers.ModelSerializer):
         }
 
 
-class RatingResponseSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = RatingResponse
-        fields = '__all__'
-        extra_kwargs = {
-            'id': {'read_only': True}
-        }
-
-
 class UserInfoLiteSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ('id', 'name')
         extra_kwargs = {
             'id': {'read_only': True},
+        }
+
+
+class RatingResponseLiteSerializer(serializers.ModelSerializer):
+    user = UserInfoLiteSerializer()
+
+    class Meta:
+        model = RatingResponse
+        exclude = ('rating',)
+        extra_kwargs = {
+            'id': {'read_only': True}
         }
 
 
@@ -76,7 +78,7 @@ class ProductRatingsSerializer(serializers.ModelSerializer):
         }
 
     def get_responses(self, obj):
-        return RatingResponseSerializer(obj.responses, many=True).data
+        return RatingResponseLiteSerializer(obj.responses, many=True).data
 
 
 class ProductSerializer(serializers.ModelSerializer):
@@ -104,7 +106,7 @@ class ProductDetailSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Product
-        fields = '__all__'
+        fields = tuple([field.name for field in model._meta.fields]) + ('avg_rating', 'brand', 'ratings')
         extra_kwargs = {
             'id': {'read_only': True}
         }
@@ -192,6 +194,15 @@ class UserInfoSerializer(serializers.ModelSerializer):
 class UserRateProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Rating
+        fields = '__all__'
+        extra_kwargs = {
+            'id': {'read_only': True},
+        }
+
+
+class RatingResponseSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = RatingResponse
         fields = '__all__'
         extra_kwargs = {
             'id': {'read_only': True},
