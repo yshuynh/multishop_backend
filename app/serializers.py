@@ -60,10 +60,7 @@ class RatingResponseLiteSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = RatingResponse
-        exclude = ('rating',)
-        extra_kwargs = {
-            'id': {'read_only': True}
-        }
+        exclude = ('rating', 'id')
 
 
 class ProductRatingsSerializer(serializers.ModelSerializer):
