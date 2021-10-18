@@ -49,7 +49,7 @@ class BrandSerializer(serializers.ModelSerializer):
 class UserInfoLiteSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ('id', 'name')
+        fields = ('id', 'name', 'role')
         extra_kwargs = {
             'id': {'read_only': True},
         }
