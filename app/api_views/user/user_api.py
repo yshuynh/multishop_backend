@@ -11,6 +11,7 @@ class UserInfoAPI(generics.GenericAPIView):
     queryset = User.objects
     serializer_class = UserSerializer
     authentication_classes = (JwtAuthentication,)
+    permission_classes = (UserPermission,)
 
     def get_serializer_class(self):
         if self.request.method == 'PUT':
