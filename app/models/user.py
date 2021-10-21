@@ -26,5 +26,8 @@ class User(AbstractBaseUser, PermissionsMixin):
     class Meta:
         db_table = 'user'
 
+    def __str__(self):
+        return self.username + ' - Name: ' + self.name
+
 
 NONE_USER = User(id=9999999999, role=None)

@@ -14,6 +14,9 @@ class Rating(models.Model):
         db_table = 'rating'
         unique_together = [['user', 'product']]
 
+    def __str__(self):
+        return self.user.name + ' đã bình luận <' + self.comment + '> tại sản phẩm <' + self.product.name + '>'
+
 
 class RatingResponse(models.Model):
     rating = models.ForeignKey('Rating', on_delete=models.CASCADE, related_name='responses')
@@ -24,3 +27,6 @@ class RatingResponse(models.Model):
 
     class Meta:
         db_table = 'rating_response'
+
+    def __str__(self):
+        return self.user.name + ': ' + self.comment
