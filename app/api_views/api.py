@@ -107,7 +107,7 @@ class BrandListAPI(generics.GenericAPIView):
 
 class BrandSingleAPI(generics.GenericAPIView):
     queryset = Brand.objects.all()
-    serializer_class = BrandFullSerializer
+    serializer_class = BrandSerializer
 
     def get(self, request, pk, *arg, **kwargs):
         c_brand = self.get_object()
