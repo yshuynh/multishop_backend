@@ -43,7 +43,7 @@ class RegisterAPI(generics.GenericAPIView):
 
 class CategoryListAPI(generics.GenericAPIView):
     queryset = Category.objects.all()
-    serializer_class = CategorySerializer
+    serializer_class = CategoryFullSerializer
 
     def get(self, request, *arg, **kwargs):
         serializer = self.get_serializer(self.get_queryset(), many=True)
