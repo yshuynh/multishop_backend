@@ -203,6 +203,11 @@ class UserRateProductSerializer(serializers.ModelSerializer):
             'id': {'read_only': True},
         }
 
+    def to_representation(self, instance):
+        data = super(UserRateProductSerializer, self).to_representation(instance)
+        data['user'] = UserInfoLiteSerializer(User.objects.get(id=data['user'])).data
+        return data
+
 
 class RatingResponseSerializer(serializers.ModelSerializer):
     class Meta:
@@ -211,3 +216,8 @@ class RatingResponseSerializer(serializers.ModelSerializer):
         extra_kwargs = {
             'id': {'read_only': True},
         }
+
+    def to_representation(self, instance):
+        data = super(RatingResponseSerializer, self).to_representation(instance)
+        data['user'] = UserInfoLiteSerializer(User.objects.get(id=data['user'])).data
+        return data

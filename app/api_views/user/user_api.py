@@ -3,7 +3,7 @@ from rest_framework.response import Response
 from app.authentication import JwtAuthentication
 from app.models.rating import Rating
 from app.models.user import User
-from app.permissions import UserPermission
+from app.permissions import UserPermission, LoggedPermission
 from app.serializers import UserSerializer, UserInfoSerializer, UserRateProductSerializer, RatingResponseSerializer
 
 
@@ -60,7 +60,7 @@ class UserResponseRatingAPI(generics.GenericAPIView):
     queryset = Rating
     serializer_class = RatingResponseSerializer
     authentication_classes = (JwtAuthentication,)
-    permission_classes = (UserPermission,)
+    permission_classes = (LoggedPermission,)
 
     def post(self, request, pk, *arg, **kwargs):
         c_rating = self.get_object()
