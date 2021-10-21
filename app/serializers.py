@@ -1,3 +1,4 @@
+from django.contrib.auth.hashers import make_password
 from rest_framework import serializers, exceptions
 
 from app.models import Category, Product, Brand
@@ -11,7 +12,11 @@ class LoginSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ('access_token',)
+        fields = ('access_token', 'username', 'password')
+        extra_kwargs = {
+            'username': {'write_only': True},
+            'password': {'write_only': True}
+        }
 
     def get_access_token(self, obj):
         return jwt_util.extract_token(obj)
@@ -154,7 +159,8 @@ class CategoryFullSerializer(serializers.ModelSerializer):
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        exclude = ('password',)
+        fields = ('id', 'username', 'email', 'role', 'name', 'address', 'phone_number',
+                   'dob', 'created_at', 'updated_at')
         extra_kwargs = {
             'id': {'read_only': True}
         }
@@ -172,8 +178,9 @@ class RegisterSerializer(serializers.ModelSerializer):
         }
 
     def create(self, validated_data):
-        validated_data['password'] = string_util.encrypt_string(validated_data['password'])
-        instance = User.objects.create(**validated_data)
+        # validated_data['password'] = string_util.encrypt_string(validated_data['password'])
+        instance = User.objects.create_user(**validated_data)
+        instance.password = make_password(validated_data['password'])
         return instance
 
 

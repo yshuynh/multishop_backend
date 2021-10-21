@@ -17,9 +17,12 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 
+from app.views import *
 from server import settings
 
 urlpatterns = [
+    path('admin/logout/', LogoutAPI.as_view(), name="logout_api"),
+    path('admin_login', AdminPageLoginAPI.as_view(), name="logout_api"),
     path('admin/', admin.site.urls),
     path('api/', include('app.api_views.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

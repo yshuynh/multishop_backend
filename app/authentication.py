@@ -9,7 +9,9 @@ class JwtAuthentication(authentication.BaseAuthentication):
     def authenticate(self, request):
         jwt_value = self.get_jwt_value(request)
         if jwt_value is None:
-            return (NONE_USER, None)
+            jwt_value = request.COOKIES.get('access_token')
+            if jwt_value is None:
+                return (NONE_USER, None)
 
         try:
             payload = jwt_util.extract_payload(jwt_value)
