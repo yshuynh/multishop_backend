@@ -1,5 +1,8 @@
 from django.contrib.auth.middleware import AuthenticationMiddleware
+from rest_framework import exceptions
+
 from app.authentication import JwtAuthentication
+from app.models import NONE_USER
 
 
 class CustomAuthMiddleware(AuthenticationMiddleware):
@@ -10,5 +13,8 @@ class CustomAuthMiddleware(AuthenticationMiddleware):
             "'django.contrib.sessions.middleware.SessionMiddleware' before "
             "'django.contrib.auth.middleware.AuthenticationMiddleware'."
         )
-        jwt_auth = JwtAuthentication()
-        request.user, _ = jwt_auth.authenticate(request)
+        try:
+            jwt_auth = JwtAuthentication()
+            request.user, _ = jwt_auth.authenticate(request)
+        except exceptions.AuthenticationFailed as e:
+            request.user = NONE_USER
