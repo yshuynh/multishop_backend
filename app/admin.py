@@ -8,10 +8,10 @@ from django.contrib.auth.admin import UserAdmin
 from app.models import User, Product, Category, Brand
 from app.models.rating import RatingResponse, Rating
 
-admin.site.register(Product)
-admin.site.register(Category)
+# admin.site.register(Product)
+# admin.site.register(Category)
 # admin.site.register(Rating)
-admin.site.register(RatingResponse)
+# admin.site.register(RatingResponse)
 admin.site.register(Brand)
 
 
@@ -56,6 +56,37 @@ class CustomRatingAdmin(admin.ModelAdmin):
         }
 
 
+class CustomCategoryAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name', 'get_brands')
+
+    @display(description='Brand List')
+    def get_brands(self, obj):
+        return [str(e) + ', ' for e in obj.brands.all()]
+
+
+class CustomProductAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name', 'description', 'get_thumbnail', 'brand', 'sale_price', 'category')
+
+    @display(description='Thumbnail')
+    def get_thumbnail(self, obj):
+        return mark_safe(f'<img style="width:100px; height:100px;" src="{obj.thumbnail}">')
+
+
+class CustomRatingResponseAdmin(admin.ModelAdmin):
+    list_display = ('id', 'get_rating', 'get_response_rating')
+
+    @display(description='Rating')
+    def get_rating(self, obj):
+        return f'<{obj.rating.user.name}> <{obj.rating.comment}>'
+
+    @display(description='Response')
+    def get_response_rating(self, obj):
+        return f'<{obj.user.name}> <{obj.comment}>'
+
+
 admin.site.register(User, CustomUserAdmin)
 admin.site.register(Rating, CustomRatingAdmin)
+admin.site.register(Category, CustomCategoryAdmin)
+admin.site.register(Product, CustomProductAdmin)
+admin.site.register(RatingResponse, CustomRatingResponseAdmin)
 admin.site.site_header = 'Admin Management'
