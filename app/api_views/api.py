@@ -4,9 +4,10 @@ from rest_framework.response import Response
 
 from app.exceptions import ClientException
 from app.models import Category, Product, Brand
+from app.models.rating import Rating
 from app.models.user import User
 from app.serializers import CategoryFullSerializer, ProductSerializer, CategorySerializer, BrandSerializer, \
-    BrandFullSerializer, LoginSerializer, RegisterSerializer, ProductDetailSerializer
+    BrandFullSerializer, LoginSerializer, RegisterSerializer, ProductDetailSerializer, ProductRatingsSerializer
 from app.utils import string_util
 
 
@@ -112,4 +113,14 @@ class BrandSingleAPI(generics.GenericAPIView):
     def get(self, request, pk, *arg, **kwargs):
         c_brand = self.get_object()
         serializer = self.get_serializer(c_brand)
+        return Response(serializer.data)
+
+
+class RatingListProductAPI(generics.GenericAPIView):
+    queryset = Product.objects
+    serializer_class = ProductRatingsSerializer
+
+    def get(self, request, pk, *arg, **kwargs):
+        c_brand = self.get_object()
+        serializer = self.get_serializer(c_brand.ratings.all(), many=True)
         return Response(serializer.data)

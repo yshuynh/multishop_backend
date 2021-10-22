@@ -8,6 +8,7 @@ urlpatterns = [
     path('products/<str:pk>', ProductSingleAPI.as_view(), name='product_single'),
     path('brands', BrandListAPI.as_view(), name='brand_list'),
     path('brands/<str:pk>', BrandSingleAPI.as_view(), name='brand_single'),
+    path('ratings/<str:pk>', RatingListProductAPI.as_view(), name='ratings_of_product'),
     # path('single/<str:pk>', CategoryDetailAPI.as_view(), name='category_detail'),
     # path('<str:pk>', PostOfCategoryAPI.as_view(), name='store_search'),
 

@@ -74,7 +74,7 @@ class ProductRatingsSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Rating
-        exclude = ('product',)
+        fields = tuple([field.name for field in model._meta.fields]) + ('responses',)
         extra_kwargs = {
             'id': {'read_only': True}
         }
