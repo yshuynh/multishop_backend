@@ -13,3 +13,6 @@ class Product(models.Model):
 
     class Meta:
         db_table = 'product'
+
+    def __str__(self):
+        return self.name

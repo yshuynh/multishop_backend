@@ -29,7 +29,7 @@ class CustomUserAdmin(UserAdmin):
 
 
 class CustomRatingAdmin(admin.ModelAdmin):
-    list_display = ('id', 'get_user', 'rate', 'comment', 'get_product', 'get_response')
+    list_display = ('id', 'get_user', 'rate', 'comment', 'get_product', 'get_response', 'btn_add_response')
 
     @display(description='User')
     def get_user(self, obj):
@@ -49,6 +49,10 @@ class CustomRatingAdmin(admin.ModelAdmin):
             '<li>{}</li>'.format(e.user.name + ': ' + e.comment) for e in obj.responses.all())
         to_return += '</ul>'
         return mark_safe(to_return)
+
+    @display(description='Action')
+    def btn_add_response(self, obj):
+        return mark_safe(f'<a href="/admin/app/ratingresponse/add/?rating={obj.id}&next=/admin/app/rating/"><input type="button" value="Add response"/></a>')
 
     class Media:
         css = {
@@ -82,6 +86,14 @@ class CustomRatingResponseAdmin(admin.ModelAdmin):
     @display(description='Response')
     def get_response_rating(self, obj):
         return f'<{obj.user.name}> <{obj.comment}>'
+
+    def get_form(self, request, obj=None, **kwargs):
+        form = super(CustomRatingResponseAdmin, self).get_form(request, obj, **kwargs)
+        form.base_fields['user'].initial = request.user
+        form.base_fields['user'].disabled = True
+        # form.base_fields['rating'].disabled = True
+        # form.fields['user'].disabled = True
+        return form
 
 
 admin.site.register(User, CustomUserAdmin)
