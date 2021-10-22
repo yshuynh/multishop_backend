@@ -1,5 +1,4 @@
 from django.contrib.auth.middleware import AuthenticationMiddleware
-
 from app.authentication import JwtAuthentication
 
 

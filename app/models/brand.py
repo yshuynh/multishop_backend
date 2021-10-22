@@ -8,3 +8,6 @@ class Brand(models.Model):
 
     class Meta:
         db_table = 'brand'
+
+    def __str__(self):
+        return self.name

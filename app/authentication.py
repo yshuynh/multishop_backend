@@ -1,28 +1,36 @@
 import jwt
 from rest_framework import authentication, exceptions
-from rest_framework_jwt.settings import api_settings
 from app.models.user import User, NONE_USER
 from app.utils import jwt_util
+from django.utils.translation import ugettext_lazy as _
 
 
 class JwtAuthentication(authentication.BaseAuthentication):
     def authenticate(self, request):
+        is_cookie = False
         jwt_value = self.get_jwt_value(request)
         if jwt_value is None:
             jwt_value = request.COOKIES.get('access_token')
+            is_cookie = True
             if jwt_value is None:
                 return (NONE_USER, None)
 
         try:
             payload = jwt_util.extract_payload(jwt_value)
         except jwt.ExpiredSignatureError:
-            msg = 'Signature has expired.'
+            if is_cookie:
+                return (NONE_USER, None)
+            msg = _('Signature has expired.')
             raise exceptions.AuthenticationFailed(msg)
         except jwt.DecodeError as e:
             print(str(e))
+            if is_cookie:
+                return (NONE_USER, None)
             msg = 'Error decoding signature.'
             raise exceptions.AuthenticationFailed(msg)
         except jwt.InvalidTokenError:
+            if is_cookie:
+                return (NONE_USER, None)
             raise exceptions.AuthenticationFailed()
         user = self.authenticate_credentials(payload)
 
