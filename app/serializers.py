@@ -83,9 +83,19 @@ class ProductRatingsSerializer(serializers.ModelSerializer):
         return RatingResponseLiteSerializer(obj.responses, many=True).data
 
 
+class CategorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Category
+        fields = ('id', 'name', 'thumbnail')
+        extra_kwargs = {
+            'id': {'read_only': True}
+        }
+
+
 class ProductSerializer(serializers.ModelSerializer):
     brand = BrandSerializer()
     avg_rating = serializers.SerializerMethodField()
+    category = CategorySerializer()
 
     class Meta:
         model = Product
@@ -105,6 +115,7 @@ class ProductDetailSerializer(serializers.ModelSerializer):
     brand = BrandSerializer()
     ratings = serializers.SerializerMethodField()
     avg_rating = serializers.SerializerMethodField()
+    category = CategorySerializer()
 
     class Meta:
         model = Product
@@ -122,15 +133,6 @@ class ProductDetailSerializer(serializers.ModelSerializer):
         if len(list_rate) == 0:
             return 0
         return round(float(sum(list_rate)/len(list_rate)), 1)
-
-
-class CategorySerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Category
-        fields = ('id', 'name', 'thumbnail')
-        extra_kwargs = {
-            'id': {'read_only': True}
-        }
 
 
 class CategoryFullSerializer(serializers.ModelSerializer):
