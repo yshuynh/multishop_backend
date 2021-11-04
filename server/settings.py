@@ -44,9 +44,9 @@ INSTALLED_APPS = [
 
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'app.pagination.CustomPagination',
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'app.authentication.JwtAuthentication',
-    ),
+    # 'DEFAULT_AUTHENTICATION_CLASSES': (
+    #     'app.authentication.JwtAuthentication',
+    # ),
 }
 
 MIDDLEWARE = [
