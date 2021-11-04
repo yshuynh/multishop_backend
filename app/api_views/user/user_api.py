@@ -41,6 +41,7 @@ class UserRateProductAPI(generics.GenericAPIView):
         data['user'] = request.user.id
         user_id = request.user.id
         product_id = request.data.get('product')
+        data['is_solved'] = False
         try:
             rating = Rating.objects.get(user=user_id, product_id=product_id)
             serializer = self.get_serializer(rating, data=data)

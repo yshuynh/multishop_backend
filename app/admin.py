@@ -29,7 +29,7 @@ class CustomUserAdmin(UserAdmin):
 
 
 class CustomRatingAdmin(admin.ModelAdmin):
-    list_display = ('id', 'get_user', 'rate', 'comment', 'get_product', 'get_response', 'btn_add_response')
+    list_display = ('id', 'get_user', 'rate', 'comment', 'get_product', 'get_response', 'is_solved', 'btn_add_response')
 
     @display(description='User')
     def get_user(self, obj):
@@ -37,7 +37,7 @@ class CustomRatingAdmin(admin.ModelAdmin):
 
     @display(description='Product')
     def get_product(self, obj):
-        return obj.product.name
+        return mark_safe(f'<a href="/admin/app/product/{obj.product.id}/">{obj.product.name}</a>')
 
     @display(description='Response List')
     def get_response(self, obj):
