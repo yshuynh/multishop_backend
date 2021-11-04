@@ -63,6 +63,6 @@ class JwtAuthentication(authentication.BaseAuthentication):
             user = User.objects.get(id=user_id)
         except User.DoesNotExist:
             msg = 'Invalid payload.'
-            # return NONE_USER
-            raise exceptions.AuthenticationFailed(msg)
+            return NONE_USER
+            # raise exceptions.AuthenticationFailed(msg)
         return user
