@@ -33,15 +33,23 @@ for product in input_data:
     response = requests.get(url)
     response_data = response.json()['result']['product']
 
+    attribute_groups = response_data['productDetail']['attributeGroups']
+    spec = ''
+    for e in attribute_groups:
+        spec += e['name'] + ':' + e['value']
+
     output_data = {
         'id': response_data['productInfo']['skuId'],
         'name': response_data['productInfo']['name'],
         'description': response_data['productDetail']['seoInfo']['description'],
+        'short_description': response_data['productDetail']['seoInfo']['shortDescription'],
         'thumbnail': response_data['productInfo']['imageUrl'],
         'sale_price': response_data['prices'][0]['latestPrice'],
         'price': response_data['prices'][0]['sellPrice'],
         'brand': response_data['productInfo']['brand']['name'],
         'category': category,
+        'specifications': spec,
+        'images': response_data['productDetail']['images'],
     }
     list_output_data.append(output_data)
     time.sleep(1)

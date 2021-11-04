@@ -1,7 +1,7 @@
 from django.contrib.auth.hashers import make_password
 from rest_framework import serializers, exceptions
 
-from app.models import Category, Product, Brand
+from app.models import Category, Product, Brand, Image
 from app.models.rating import Rating, RatingResponse
 from app.models.user import User
 from app.utils import jwt_util, string_util
@@ -20,6 +20,15 @@ class LoginSerializer(serializers.ModelSerializer):
 
     def get_access_token(self, obj):
         return jwt_util.extract_token(obj)
+
+
+class ImageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Image
+        fields = '__all__'
+        extra_kwargs = {
+            'id': {'read_only': True}
+        }
 
 
 class BrandFullSerializer(serializers.ModelSerializer):
@@ -99,7 +108,7 @@ class ProductSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Product
-        fields = '__all__'
+        fields = ('id', 'name', 'thumbnail', 'brand', 'price', 'sale_price', 'created_at', 'updated_at', 'category', 'short_description', 'avg_rating')
         extra_kwargs = {
             'id': {'read_only': True}
         }
@@ -116,10 +125,11 @@ class ProductDetailSerializer(serializers.ModelSerializer):
     ratings = serializers.SerializerMethodField()
     avg_rating = serializers.SerializerMethodField()
     category = CategorySerializer()
+    images = serializers.SerializerMethodField()
 
     class Meta:
         model = Product
-        fields = tuple([field.name for field in model._meta.fields]) + ('avg_rating', 'brand', 'ratings')
+        fields = tuple([field.name for field in model._meta.fields]) + ('avg_rating', 'brand', 'ratings', 'images')
         extra_kwargs = {
             'id': {'read_only': True}
         }
@@ -133,6 +143,10 @@ class ProductDetailSerializer(serializers.ModelSerializer):
         if len(list_rate) == 0:
             return 0
         return round(float(sum(list_rate)/len(list_rate)), 1)
+
+    def get_images(self, obj):
+        serializer = ImageSerializer(obj.images.all(), many=True)
+        return serializer.data
 
 
 class CategoryFullSerializer(serializers.ModelSerializer):
