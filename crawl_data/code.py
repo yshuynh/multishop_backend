@@ -36,7 +36,7 @@ for product in input_data:
     attribute_groups = response_data['productDetail']['attributeGroups']
     spec = ''
     for e in attribute_groups:
-        spec += e['name'] + ':' + e['value']
+        spec += e['name'] + ':' + e['value'] + '\n'
 
     output_data = {
         'id': response_data['productInfo']['skuId'],

@@ -25,10 +25,30 @@ class LoginSerializer(serializers.ModelSerializer):
 class ImageSerializer(serializers.ModelSerializer):
     class Meta:
         model = Image
-        fields = '__all__'
+        fields = ('id', 'label', 'url')
         extra_kwargs = {
             'id': {'read_only': True}
         }
+
+
+class SpecificationsSerializer(serializers.CharField):
+    specifications = serializers.CharField()
+
+    def to_internal_value(self, data):
+        print(data)
+        return data
+
+    def to_representation(self, value):
+        data = super(SpecificationsSerializer, self).to_representation(value)
+        list_data = value.split('\n')
+        res = []
+        for e in list_data:
+            item_list = e.split(':')
+            res.append({
+                'name': item_list[0],
+                'value': item_list[1] if len(item_list) > 1 else '',
+            })
+        return res
 
 
 class BrandFullSerializer(serializers.ModelSerializer):
@@ -126,6 +146,7 @@ class ProductDetailSerializer(serializers.ModelSerializer):
     avg_rating = serializers.SerializerMethodField()
     category = CategorySerializer()
     images = serializers.SerializerMethodField()
+    specifications = SpecificationsSerializer()
 
     class Meta:
         model = Product
