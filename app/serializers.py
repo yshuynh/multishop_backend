@@ -1,3 +1,4 @@
+import jwt
 from django.contrib.auth.hashers import make_password
 from rest_framework import serializers, exceptions
 
@@ -5,21 +6,59 @@ from app.models import Category, Product, Brand, Image
 from app.models.rating import Rating, RatingResponse
 from app.models.user import User
 from app.utils import jwt_util, string_util
+from app.utils.constants import TOKEN_TYPE, ERROR_MESSAGE
 
 
 class LoginSerializer(serializers.ModelSerializer):
     access_token = serializers.SerializerMethodField()
+    refresh_token = serializers.SerializerMethodField()
 
     class Meta:
         model = User
-        fields = ('access_token', 'username', 'password')
+        fields = ('refresh_token', 'access_token', 'username', 'password')
         extra_kwargs = {
             'username': {'write_only': True},
             'password': {'write_only': True}
         }
 
     def get_access_token(self, obj):
-        return jwt_util.extract_token(obj)
+        return jwt_util.extract_token(obj, TOKEN_TYPE.ACCESS)
+
+    def get_refresh_token(self, obj):
+        return jwt_util.extract_token(obj, TOKEN_TYPE.REFRESH)
+
+
+class RefreshTokenSerializer(serializers.Serializer):
+    access_token = serializers.SerializerMethodField()
+    refresh_token = serializers.CharField(write_only=True)
+
+    def __init__(self, instance=None, data=None, **kwargs):
+        super(RefreshTokenSerializer, self).__init__(instance, data, **kwargs)
+        self.user = None
+
+    def validate_refresh_token(self, jwt_value):
+        try:
+            payload = jwt_util.extract_payload(jwt_value)
+        except jwt.ExpiredSignatureError:
+            msg = ERROR_MESSAGE.TOKEN_EXPIRED
+            raise exceptions.AuthenticationFailed(msg)
+        except jwt.DecodeError as e:
+            msg = ERROR_MESSAGE.TOKEN_DECODING_ERROR
+            raise exceptions.AuthenticationFailed(msg)
+        except jwt.InvalidTokenError:
+            raise exceptions.AuthenticationFailed()
+        if payload.get('type') != TOKEN_TYPE.REFRESH:
+            raise exceptions.AuthenticationFailed(ERROR_MESSAGE.TOKEN_WRONG_TYPE_REFRESH)
+        self.user = User.objects.get(id=payload.get('id'))
+
+    def get_access_token(self, obj):
+        return jwt_util.extract_token(self.user, TOKEN_TYPE.ACCESS)
+
+    def update(self, instance, validated_data):
+        pass
+
+    def create(self, validated_data):
+        pass
 
 
 class ImageSerializer(serializers.ModelSerializer):

@@ -7,7 +7,8 @@ from app.models import Category, Product, Brand
 from app.models.rating import Rating
 from app.models.user import User
 from app.serializers import CategoryFullSerializer, ProductSerializer, CategorySerializer, BrandSerializer, \
-    BrandFullSerializer, LoginSerializer, RegisterSerializer, ProductDetailSerializer, ProductRatingsSerializer
+    BrandFullSerializer, LoginSerializer, RegisterSerializer, ProductDetailSerializer, ProductRatingsSerializer, \
+    RefreshTokenSerializer
 from app.utils import string_util
 
 
@@ -29,6 +30,19 @@ class LoginAPI(generics.GenericAPIView):
         response = Response(serializer.data)
         response.set_cookie('access_token', serializer.data.get('access_token'))
         return response
+
+
+class RefreshTokenAPI(generics.GenericAPIView):
+    serializer_class = RefreshTokenSerializer
+
+    def post(self, request, *args, **kwargs):
+        refresh_token = request.data.get('refresh_token')
+        serializer = self.get_serializer(data={'refresh_token': refresh_token})
+        if serializer.is_valid():
+            response = Response(serializer.data)
+            response.set_cookie('access_token', serializer.data.get('access_token'))
+            return response
+        raise ClientException('Refresh token is not valid.')
 
 
 class RegisterAPI(generics.GenericAPIView):

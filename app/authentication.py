@@ -4,6 +4,8 @@ from app.models.user import User, NONE_USER
 from app.utils import jwt_util
 from django.utils.translation import ugettext_lazy as _
 
+from app.utils.constants import TOKEN_TYPE, ERROR_MESSAGE
+
 
 class JwtAuthentication(authentication.BaseAuthentication):
     def authenticate(self, request):
@@ -20,18 +22,21 @@ class JwtAuthentication(authentication.BaseAuthentication):
         except jwt.ExpiredSignatureError:
             if is_cookie:
                 return (NONE_USER, None)
-            msg = _('Signature has expired.')
+            msg = ERROR_MESSAGE.TOKEN_EXPIRED
             raise exceptions.AuthenticationFailed(msg)
         except jwt.DecodeError as e:
             print(str(e))
             if is_cookie:
                 return (NONE_USER, None)
-            msg = 'Error decoding signature.'
+            msg = ERROR_MESSAGE.TOKEN_DECODING_ERROR
             raise exceptions.AuthenticationFailed(msg)
         except jwt.InvalidTokenError:
             if is_cookie:
                 return (NONE_USER, None)
             raise exceptions.AuthenticationFailed()
+        if payload.get('type') != TOKEN_TYPE.ACCESS:
+            raise exceptions.AuthenticationFailed(ERROR_MESSAGE.TOKEN_WRONG_TYPE_ACCESS)
+
         user = self.authenticate_credentials(payload)
 
         return (user, payload)
