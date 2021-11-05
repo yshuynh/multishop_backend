@@ -125,10 +125,11 @@ class ProductSerializer(serializers.ModelSerializer):
     brand = BrandSerializer()
     avg_rating = serializers.SerializerMethodField()
     category = CategorySerializer()
+    discount = serializers.SerializerMethodField()
 
     class Meta:
         model = Product
-        fields = ('id', 'name', 'thumbnail', 'brand', 'price', 'sale_price', 'created_at', 'updated_at', 'category', 'short_description', 'avg_rating')
+        fields = ('id', 'name', 'thumbnail', 'brand', 'price', 'sale_price', 'discount', 'created_at', 'updated_at', 'category', 'short_description', 'avg_rating')
         extra_kwargs = {
             'id': {'read_only': True}
         }
@@ -139,6 +140,9 @@ class ProductSerializer(serializers.ModelSerializer):
             return 0
         return round(float(sum(list_rate)/len(list_rate)), 1)
 
+    def get_discount(self, obj):
+        return int(float((obj.price-obj.sale_price) / obj.price)*100)
+
 
 class ProductDetailSerializer(serializers.ModelSerializer):
     brand = BrandSerializer()
@@ -147,10 +151,11 @@ class ProductDetailSerializer(serializers.ModelSerializer):
     category = CategorySerializer()
     images = serializers.SerializerMethodField()
     specifications = SpecificationsSerializer()
+    discount = serializers.SerializerMethodField()
 
     class Meta:
         model = Product
-        fields = tuple([field.name for field in model._meta.fields]) + ('avg_rating', 'brand', 'ratings', 'images')
+        fields = tuple([field.name for field in model._meta.fields if field.name not in ['price', 'sale_price']]) + ('price', 'sale_price', 'discount', 'avg_rating', 'brand', 'ratings', 'images')
         extra_kwargs = {
             'id': {'read_only': True}
         }
@@ -168,6 +173,9 @@ class ProductDetailSerializer(serializers.ModelSerializer):
     def get_images(self, obj):
         serializer = ImageSerializer(obj.images.all(), many=True)
         return serializer.data
+
+    def get_discount(self, obj):
+        return int(float((obj.price-obj.sale_price) / obj.price)*100)
 
 
 class CategoryFullSerializer(serializers.ModelSerializer):
