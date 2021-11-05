@@ -41,6 +41,13 @@ def create_data(apps, schema_editor):
     user1.name = "Lê Đức Lương"
     user1.save()
 
+    user2 = User.objects.create_user(
+        username='user2',
+        password='123'
+    )
+    user2.name = "Ngô Hoàng Minh"
+    user2.save()
+
     c_product = Product.objects.all().first()
     c_rating = Rating.objects.create(
         rate=4,
@@ -49,6 +56,12 @@ def create_data(apps, schema_editor):
         product=c_product
     )
     c_rating.save()
+    Rating.objects.create(
+        rate=5,
+        comment="Sản phẩm rất tuyệt vời.",
+        user=user2,
+        product=c_product
+    )
 
     RatingResponse.objects.create(
         comment="Bạn hãy đến cửa hàng gần nhất để nhận khuyến mãi nhé.",
