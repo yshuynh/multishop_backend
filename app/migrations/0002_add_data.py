@@ -6,16 +6,22 @@ from server.settings import BASE_DIR
 
 def get_category_thumbnail(category_name):
     data = {
-        'Laptop': 'fas fa-laptop',
-        "Bàn phím": "fas fa-keyboard",
-        "Chuột": "fas fa-mouse",
-        "Tai nghe": "fas fa-headphones",
-        "Tay cầm chơi game": "fab fa-xbox",
-        "PC": "fas fa-hdd",
-        "Màn hình": "fas fa-desktop",
-        "Ghế Gaming": "fas fa-chair",
+        'laptop': 'fas fa-laptop',
+        "bàn phím": "fas fa-keyboard",
+        "chuột": "fas fa-mouse",
+        'chuột máy tính': 'fas fa-mouse',
+        "tai nghe": "fas fa-headphones",
+        "tay cầm chơi game": "fab fa-xbox",
+        "pc": "fas fa-hdd",
+        "màn hình": "fas fa-desktop",
+        "ghế gaming": "fas fa-chair",
+        'pc linh kiện': 'fas fa-hdd',
+        'tivi': 'fas fa-desktop',
+        'thiết bị thông minh': 'fas fa-camera',
+        'điện thoại & tablet': 'fas fa-mobile-alt'
+
     }
-    return data[category_name]
+    return data.get(category_name.lower(), '')
 
 
 def create_data(apps, schema_editor):
@@ -25,7 +31,7 @@ def create_data(apps, schema_editor):
     Category = apps.get_model('app', 'Category')
     Brand = apps.get_model('app', 'Brand')
     Image = apps.get_model('app', 'Image')
-    with open(BASE_DIR / 'init_data2.json', encoding='utf-8') as f:
+    with open(BASE_DIR / 'init_data3.json', encoding='utf-8') as f:
         json_data = f.read()
     # print(json_data)
     json_data = json.loads(json_data)
@@ -38,6 +44,8 @@ def create_data(apps, schema_editor):
             )
             m_brand.save()
 
+        if '/' in product['category']:
+            product['category'] = product['category'].split('/')[1]
         try:
             m_category = Category.objects.get(name=product['category'])
         except Category.DoesNotExist:

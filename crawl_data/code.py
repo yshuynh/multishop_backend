@@ -18,19 +18,34 @@ from webdriver_manager.chrome import ChromeDriverManager
 with open('product_list.json', "r", encoding='utf-8') as file:
     input_data = json.loads(file.read())
 print(input_data)
+f_raw = open('data_raw.json', "w", encoding='utf-8')
 
 
 #################################################################################
-category = 'Laptop'
+def get_right_category(category, category2):
+    print(category2.split('/'))
+    data = {
+        'Laptop / Apple': 'Laptop',
+        'Thiết bị Điện & Gia Dụng': 'Tivi',
+        'Màn hình': category2.split('/')[1] if '/' in category2 else category2,
+    }
+    print(category, data.get(category, category))
+    return data.get(category, category)
+
+
 list_output_data = []
 base_url = 'https://phongvu.vn/api/product/'
 len_input_data = len(input_data)
 cnt = 0
+# input_data = input_data[84:]
 for product in input_data:
     cnt += 1
     print(cnt, '/', len(input_data))
     url = base_url + product['productInfo']['skuId']
     response = requests.get(url)
+    if response.status_code != 200:
+        print(response.reason)
+        continue
     response_data = response.json()['result']['product']
 
     attribute_groups = response_data['productDetail']['attributeGroups']
@@ -47,14 +62,16 @@ for product in input_data:
         'sale_price': response_data['prices'][0]['latestPrice'],
         'price': response_data['prices'][0]['sellPrice'],
         'brand': response_data['productInfo']['brand']['name'],
-        'category': category,
+        'category': get_right_category(product['productInfo']['categories'][0]['name'], product['productInfo']['categories'][1]['name']),
         'specifications': spec,
         'images': response_data['productDetail']['images'],
     }
     list_output_data.append(output_data)
-    time.sleep(1)
+    f_raw.write(json.dumps(output_data) + ',\n')
+    time.sleep(3)
 
 
+f_raw.close()
 f = open('data.json', "w", encoding='utf-8')
 f.write(json.dumps(list_output_data))
 f.close()
