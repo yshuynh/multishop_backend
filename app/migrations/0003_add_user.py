@@ -1,6 +1,7 @@
 from django.db import migrations
 from rest_framework.utils import json
 
+from app.utils.constants import USER_ROLE
 from server.settings import BASE_DIR
 
 
@@ -31,6 +32,7 @@ def create_data(apps, schema_editor):
         password='ad'
     )
     ad_user.name = "Huỳnh Tấn Ý"
+    ad_user.role = USER_ROLE.ADMIN
     ad_user.save()
     user1 = User.objects.create_user(
         username='user1',
