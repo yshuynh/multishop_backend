@@ -83,11 +83,17 @@ class ProductListAPI(generics.GenericAPIView):
     def get(self, request, *arg, **kwargs):
         category_id = request.query_params.get('category')
         queryset = self.get_queryset()
+        price_highest = request.query_params.get('price_highest')
+        price_lowest = request.query_params.get('price_lowest')
         if category_id is not None:
-            queryset = self.get_queryset().filter(category=category_id)
+            queryset = queryset.filter(category=category_id)
         brand_id = request.query_params.get('brand')
         if brand_id is not None:
-            queryset = self.get_queryset().filter(brand=brand_id)
+            queryset = queryset.filter(brand=brand_id)
+        if price_highest is not None:
+            queryset = queryset.filter(sale_price__lte=price_highest)
+        if price_lowest is not None:
+            queryset = queryset.filter(sale_price__gte=price_lowest)
 
         page = self.paginate_queryset(queryset)
         if page is not None:
