@@ -6,6 +6,13 @@ class BaseConstant:
     def choices(cls):
         return [(value, value) for name, value in vars(cls).items() if name.isupper()]
 
+    def next_state(self, state):
+        list_value = [value for name, value in vars(self).items() if name.isupper()]
+        for i in range(0, len(list_value) - 1):
+            if list_value[i] == state:
+                return list_value[i + 1]
+        return None
+
 
 class USER_ROLE(BaseConstant):
     ADMIN = 'admin'
@@ -15,6 +22,18 @@ class USER_ROLE(BaseConstant):
 class TOKEN_TYPE(BaseConstant):
     ACCESS = 'access'
     REFRESH = 'refresh'
+
+
+class ORDER_STATUS(BaseConstant):
+    WAITING_CONFIRM = 'waiting_confirm'
+    CONFIRMED = 'confirmed'
+    SHIPPING = 'shipping'
+    SUCCESS = 'success'
+
+
+# class PAYMENT_TYPE(BaseConstant):
+#     CASH = 'cash'
+#     MOMO = 'momo'
 
 
 class ERROR_MESSAGE(BaseConstant):
