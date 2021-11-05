@@ -5,7 +5,7 @@ from django.utils.translation import gettext_lazy as _
 # Register your models here.
 from django.contrib.auth.admin import UserAdmin
 
-from app.models import User, Product, Category, Brand
+from app.models import User, Product, Category, Brand, Image
 from app.models.rating import RatingResponse, Rating
 
 # admin.site.register(Product)
@@ -13,6 +13,7 @@ from app.models.rating import RatingResponse, Rating
 # admin.site.register(Rating)
 # admin.site.register(RatingResponse)
 admin.site.register(Brand)
+admin.site.register(Image)
 
 
 class CustomUserAdmin(UserAdmin):
@@ -69,7 +70,7 @@ class CustomCategoryAdmin(admin.ModelAdmin):
 
 
 class CustomProductAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'description', 'get_thumbnail', 'brand', 'sale_price', 'category')
+    list_display = ('id', 'name', 'get_thumbnail', 'brand', 'sale_price', 'category', 'short_description')
 
     @display(description='Thumbnail')
     def get_thumbnail(self, obj):
