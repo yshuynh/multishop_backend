@@ -48,7 +48,7 @@ def create_data(apps, schema_editor):
     user2.name = "Ngô Hoàng Minh"
     user2.save()
 
-    c_product = Product.objects.all().first()
+    c_product = Product.objects.get(id=1201747)
     c_rating = Rating.objects.create(
         rate=4,
         comment="Sao mình ms mua máy đc 2 ngày r , về chơi game pin lúc đầu là 90 chơi trận game khoảng 30 40p , thì nó lại tuột 40% pin , kh biết có bị lỗi pin kh",
