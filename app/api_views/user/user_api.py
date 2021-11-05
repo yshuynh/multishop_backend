@@ -13,10 +13,10 @@ class UserInfoAPI(generics.GenericAPIView):
     authentication_classes = (JwtAuthentication,)
     permission_classes = (UserPermission,)
 
-    def get_serializer_class(self):
-        if self.request.method == 'PUT':
-            return UserInfoSerializer
-        return UserSerializer
+    # def get_serializer_class(self):
+    #     if self.request.method == 'PUT':
+    #         return UserInfoSerializer
+    #     return UserSerializer
 
     def get(self, request, *arg, **kwargs):
         serializer = self.get_serializer(request.user)

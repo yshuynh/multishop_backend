@@ -202,24 +202,35 @@ class CategoryFullSerializer(serializers.ModelSerializer):
 
 
 class UserSerializer(serializers.ModelSerializer):
+    dob = serializers.DateField(input_formats=['%Y-%m-%d'], required=False)
+
     class Meta:
         model = User
         fields = ('id', 'username', 'email', 'role', 'name', 'address', 'phone_number',
                    'dob', 'created_at', 'updated_at')
         extra_kwargs = {
-            'id': {'read_only': True}
+            'id': {'read_only': True},
+            'username': {'read_only': True},
+            'email': {'required': False},
+            'role': {'read_only': True},
+            'name': {'required': False},
+            'address': {'required': False},
+            'phone_number': {'required': False},
+            'dob': {'required': False},
         }
 
 
 class RegisterSerializer(serializers.ModelSerializer):
-    dob = serializers.DateField(input_formats=['%Y-%m-%d'])
+    dob = serializers.DateField(input_formats=['%Y-%m-%d'], required=False)
 
     class Meta:
         model = User
-        fields = ('id', 'username', 'password', 'email', 'name', 'address', 'phone_number', 'dob')
+        fields = ('id', 'username', 'password', 'email', 'name', 'address', 'phone_number', 'dob', 'created_at', 'updated_at')
         extra_kwargs = {
             'password': {'write_only': True},
             'id': {'read_only': True},
+            'email': {'required': False},
+            'dob': {'required': False}
         }
 
     def create(self, validated_data):
