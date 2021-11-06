@@ -46,6 +46,7 @@ class JwtAuthentication(authentication.BaseAuthentication):
             print("length auth = 0")
             return None
         print(authentication.get_authorization_header(request))
+        print(request.META)
         auth = authentication.get_authorization_header(request).split()
         if auth[0] != b'Bearer':
             msg = 'Invalid Authorization header. Start with Bearer'
