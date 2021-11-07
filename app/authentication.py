@@ -45,6 +45,8 @@ class JwtAuthentication(authentication.BaseAuthentication):
         print("\n")
         print(request.META)
         print("\n")
+        for key in request.META.keys():
+            print(key, request.META.get(key))
         if len(authentication.get_authorization_header(request)) == 0:
             print("length auth = 0")
             return None
