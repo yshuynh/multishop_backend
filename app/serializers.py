@@ -2,7 +2,7 @@ import jwt
 from django.contrib.auth.hashers import make_password
 from rest_framework import serializers, exceptions
 
-from app.models import Category, Product, Brand, Image
+from app.models import Category, Product, Brand, Image, Cart
 from app.models.rating import Rating, RatingResponse
 from app.models.user import User
 from app.utils import jwt_util, string_util
@@ -315,4 +315,30 @@ class RatingResponseSerializer(serializers.ModelSerializer):
     def to_representation(self, instance):
         data = super(RatingResponseSerializer, self).to_representation(instance)
         data['user'] = UserInfoLiteSerializer(User.objects.get(id=data['user'])).data
+        return data
+
+
+class CartSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Cart
+        fields = '__all__'
+
+
+class UserCartSerializer(serializers.ModelSerializer):
+    product = ProductSerializer()
+
+    class Meta:
+        model = Cart
+        fields = ('product', 'count', 'created_at', 'updated_at')
+
+
+class UserCartAddSerializer(serializers.ModelSerializer):
+    # product = ProductSerializer()
+
+    class Meta:
+        model = Cart
+        fields = ('user', 'product', 'count')
+
+    def to_representation(self, instance):
+        data = CartSerializer(instance).data
         return data
