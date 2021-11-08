@@ -2,12 +2,13 @@ from rest_framework import generics, status, exceptions
 from rest_framework.response import Response
 from app.authentication import JwtAuthentication
 from app.exceptions import ClientException
-from app.models import Cart
+from app.models import Cart, Order
 from app.models.rating import Rating
 from app.models.user import User
 from app.permissions import UserPermission, LoggedPermission
 from app.serializers import UserSerializer, UserInfoSerializer, UserRateProductSerializer, RatingResponseSerializer, \
-    UserCartSerializer, UserCartAddSerializer
+    UserCartSerializer, UserCartAddSerializer, UserOrderSerializer, UserOrderCreateSerializer, OrderItemSerializer, \
+    OrderItemCreateSerializer
 
 
 class UserInfoAPI(generics.GenericAPIView):
@@ -143,7 +144,7 @@ class UserCartAddItemAPI(generics.GenericAPIView):
             }
             serializer = self.get_serializer(c_cart, data=data)
             if not serializer.is_valid():
-                return Response(serializer.errors)
+                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
             serializer.save()
         except Cart.DoesNotExist:
             data = {
@@ -153,7 +154,7 @@ class UserCartAddItemAPI(generics.GenericAPIView):
             }
             serializer = self.get_serializer(data=data)
             if not serializer.is_valid():
-                return Response(serializer.errors)
+                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
             serializer.save()
         # queryset = self.get_queryset().filter(user=request.user)
         # serializer = UserCartSerializer(queryset, many=True)
@@ -178,7 +179,7 @@ class UserCartRemoveItemAPI(generics.GenericAPIView):
             }
             serializer = self.get_serializer(c_cart, data=data)
             if not serializer.is_valid():
-                return Response(serializer.errors)
+                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
             serializer.save()
             print(c_cart.count)
             if c_cart.count == 1:
@@ -187,4 +188,55 @@ class UserCartRemoveItemAPI(generics.GenericAPIView):
             raise ClientException('Product does not exist in user cart.')
         # queryset = self.get_queryset().filter(user=request.user)
         # serializer = UserCartSerializer(queryset, many=True)
+        return Response(serializer.data)
+
+
+class UserOrderListAPI(generics.GenericAPIView):
+    queryset = Order.objects
+    # serializer_class = UserOrderSerializer
+    authentication_classes = (JwtAuthentication,)
+    permission_classes = (UserPermission,)
+
+    def get_serializer_class(self):
+        if self.request.method == 'GET':
+            return UserOrderSerializer
+        if self.request.method == 'POST':
+            return UserOrderCreateSerializer
+
+    def get(self, request, *arg, **kwargs):
+        queryset = self.get_queryset().filter(user=request.user)
+        serializer = self.get_serializer(queryset, many=True)
+        return Response(serializer.data)
+
+    def post(self, request, *arg, **kwargs):
+        cart_list = Cart.objects.filter(user=request.user)
+        if len(cart_list) == 0:
+            raise ClientException("User's cart is empty.")
+        data = {
+            'user': request.user.id,
+            'payment': request.data.get('payment'),
+            'name': request.data.get('name'),
+            'address': request.data.get('address'),
+            'phone_number': request.data.get('phone_number')
+        }
+        serializer = self.get_serializer(data=data)
+        serializer.is_valid(raise_exception=True)
+
+        c_order = serializer.save()
+        o_list_serializer = []
+        for e in cart_list:
+            o_data = {
+                'product': e.product.id,
+                'count': e.count,
+                'order': c_order.id,
+                'order_price': e.product.sale_price
+            }
+            o_serializer = OrderItemCreateSerializer(data=o_data)
+            o_serializer.is_valid(raise_exception=True)
+            o_list_serializer.append(o_serializer)
+        for e in o_list_serializer:
+            e.save()
+        for e in cart_list:
+            e.delete()
+        serializer = UserOrderSerializer(c_order)
         return Response(serializer.data)
