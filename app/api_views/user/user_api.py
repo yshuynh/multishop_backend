@@ -2,13 +2,14 @@ from rest_framework import generics, status, exceptions
 from rest_framework.response import Response
 from app.authentication import JwtAuthentication
 from app.exceptions import ClientException
-from app.models import Cart, Order
+from app.models import Cart, Order, Payment
 from app.models.rating import Rating
 from app.models.user import User
 from app.permissions import UserPermission, LoggedPermission
 from app.serializers import UserSerializer, UserInfoSerializer, UserRateProductSerializer, RatingResponseSerializer, \
     UserCartSerializer, UserCartAddSerializer, UserOrderSerializer, UserOrderCreateSerializer, OrderItemSerializer, \
-    OrderItemCreateSerializer
+    OrderItemCreateSerializer, PaymentSerializer
+from app.utils.constants import SHIPPING_FEE
 
 
 class UserInfoAPI(generics.GenericAPIView):
@@ -88,6 +89,16 @@ class UserCartListAPI(generics.GenericAPIView):
     def get(self, request, *arg, **kwargs):
         queryset = self.get_queryset().filter(user=request.user)
         serializer = self.get_serializer(queryset, many=True)
+        if request.query_params.get('detail') is not None:
+            sum_price = sum([e.product.sale_price * e.count for e in queryset])
+            data = {
+                'sum_price': sum_price,
+                'shipping_fee': SHIPPING_FEE,
+                'total_cost': sum_price + SHIPPING_FEE,
+                'items': serializer.data,
+                'payments': PaymentSerializer(Payment.objects.all(), many=True).data,
+            }
+            return Response(data)
         return Response(serializer.data)
 
 
@@ -205,7 +216,11 @@ class UserOrderListAPI(generics.GenericAPIView):
 
     def get(self, request, *arg, **kwargs):
         queryset = self.get_queryset().filter(user=request.user)
-        serializer = self.get_serializer(queryset, many=True)
+        page = self.paginate_queryset(queryset)
+        if page is not None:
+            serializer = self.get_serializer(page, many=True)
+            return self.get_paginated_response(serializer.data)
+        serializer = self.get_serializer(self.get_queryset(), many=True)
         return Response(serializer.data)
 
     def post(self, request, *arg, **kwargs):
@@ -236,6 +251,16 @@ class UserOrderListAPI(generics.GenericAPIView):
             o_list_serializer.append(o_serializer)
         for e in o_list_serializer:
             e.save()
+        sum_price = sum([e.product.sale_price * e.count for e in cart_list])
+        # data = {
+        #     'sum_price': sum_price,
+        #     'shipping_fee': SHIPPING_FEE,
+        #     'total_cost': sum_price + SHIPPING_FEE
+        # }
+        c_order.sum_price = sum_price
+        c_order.shipping_fee = SHIPPING_FEE
+        c_order.total_cost = sum_price + SHIPPING_FEE
+        c_order.save()
         for e in cart_list:
             e.delete()
         serializer = UserOrderSerializer(c_order)

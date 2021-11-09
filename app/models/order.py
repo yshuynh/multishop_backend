@@ -11,6 +11,9 @@ class Order(models.Model):
     name = models.CharField(max_length=64)
     address = models.TextField()
     phone_number = models.CharField(max_length=16)
+    sum_price = models.IntegerField(default=0)
+    shipping_fee = models.IntegerField(default=0)
+    total_cost = models.IntegerField(default=0)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

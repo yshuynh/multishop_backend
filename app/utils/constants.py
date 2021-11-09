@@ -1,4 +1,5 @@
 ALLOWED_ID_CHARS = 'abcdefghijklmnopqrstuvwxyz0123456789'
+SHIPPING_FEE = 30000
 
 
 class BaseConstant:

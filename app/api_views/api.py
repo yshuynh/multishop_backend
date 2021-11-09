@@ -3,12 +3,12 @@ from rest_framework.pagination import PageNumberPagination
 from rest_framework.response import Response
 
 from app.exceptions import ClientException
-from app.models import Category, Product, Brand
+from app.models import Category, Product, Brand, Payment
 from app.models.rating import Rating
 from app.models.user import User
 from app.serializers import CategoryFullSerializer, ProductSerializer, CategorySerializer, BrandSerializer, \
     BrandFullSerializer, LoginSerializer, RegisterSerializer, ProductDetailSerializer, ProductRatingsSerializer, \
-    RefreshTokenSerializer
+    RefreshTokenSerializer, PaymentSerializer
 from app.utils import string_util
 
 
@@ -143,4 +143,13 @@ class RatingListProductAPI(generics.GenericAPIView):
     def get(self, request, pk, *arg, **kwargs):
         c_brand = self.get_object()
         serializer = self.get_serializer(c_brand.ratings.all(), many=True)
+        return Response(serializer.data)
+
+
+class PaymentListAPI(generics.GenericAPIView):
+    queryset = Payment.objects.all()
+    serializer_class = PaymentSerializer
+
+    def get(self, request, *arg, **kwargs):
+        serializer = self.get_serializer(self.get_queryset(), many=True)
         return Response(serializer.data)
