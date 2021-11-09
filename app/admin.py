@@ -5,7 +5,7 @@ from django.utils.translation import gettext_lazy as _
 # Register your models here.
 from django.contrib.auth.admin import UserAdmin
 
-from app.models import User, Product, Category, Brand, Image
+from app.models import User, Product, Category, Brand, Image, Payment, Cart, Order
 from app.models.rating import RatingResponse, Rating
 
 # admin.site.register(Product)
@@ -13,7 +13,10 @@ from app.models.rating import RatingResponse, Rating
 # admin.site.register(Rating)
 # admin.site.register(RatingResponse)
 admin.site.register(Brand)
-admin.site.register(Image)
+# admin.site.register(Image)
+# admin.site.register(Payment)
+# admin.site.register(Cart)
+# admin.site.register(Order)
 
 
 class CustomUserAdmin(UserAdmin):
@@ -97,9 +100,88 @@ class CustomRatingResponseAdmin(admin.ModelAdmin):
         return form
 
 
+class CustomPaymentAdmin(admin.ModelAdmin):
+    list_display = ('id', 'code', 'name', 'get_logo')
+
+    @display(description='Logo')
+    def get_logo(self, obj):
+        return mark_safe(f'<img style="width:100px; height:100px;" src="{obj.logo}">')
+
+    def get_queryset(self, request):
+        return super(CustomPaymentAdmin, self).get_queryset(request).order_by('id')
+
+
+class CustomImageAdmin(admin.ModelAdmin):
+    list_display = ('id', 'get_image', 'label')
+
+    @display(description='Preview Image')
+    def get_image(self, obj):
+        return mark_safe(f'<img style="width:100px; height:100px;" src="{obj.url}">')
+
+
+class CustomCartAdmin(admin.ModelAdmin):
+    list_display = ('id', 'user', 'product_name', 'get_thumbnail', 'sale_price', 'count')
+
+    @display(description='Thumbnail')
+    def get_thumbnail(self, obj):
+        return mark_safe(f'<img style="width:100px; height:100px;" src="{obj.product.thumbnail}">')
+
+    @display(description='Product Name')
+    def product_name(self, obj):
+        return obj.product.name
+
+    @display(description='Sale Price')
+    def sale_price(self, obj):
+        return obj.product.sale_price
+
+    def get_queryset(self, request):
+        return super(CustomCartAdmin, self).get_queryset(request).order_by('user__id')
+
+
+class CustomOrderAdmin(admin.ModelAdmin):
+    list_display = ('id', 'status', 'user', 'get_payment', 'is_paid', 'info', 'total_cost', 'items')
+
+    @display(description='Payment')
+    def get_payment(self, obj):
+        return mark_safe(f'<img style="width:100px; height:100px;" src="{obj.payment.logo}"><br><p>{obj.payment.name}</p>')
+
+    @display(description='Info')
+    def info(self, obj):
+        res = f'<p>{obj.name}</p>'
+        res += f'<p>{obj.name}</p>'
+        res += f'<p>{obj.name}</p>'
+        return mark_safe(res)
+
+    @display(description='Items')
+    def items(self, obj):
+        res = ''
+        for e in obj.items.all():
+            res += f'<img style="width:100px; height:100px;" src="{e.product.thumbnail}">'
+        return mark_safe(res)
+
+    @display(description='Thumbnail')
+    def get_thumbnail(self, obj):
+        return mark_safe(f'<img style="width:100px; height:100px;" src="{obj.product.thumbnail}">')
+
+    @display(description='Product Name')
+    def product_name(self, obj):
+        return obj.product.name
+
+    @display(description='Sale Price')
+    def sale_price(self, obj):
+        return obj.product.sale_price
+
+    def get_queryset(self, request):
+        return super(CustomOrderAdmin, self).get_queryset(request).order_by('user__id')
+
+
 admin.site.register(User, CustomUserAdmin)
 admin.site.register(Rating, CustomRatingAdmin)
 admin.site.register(Category, CustomCategoryAdmin)
 admin.site.register(Product, CustomProductAdmin)
 admin.site.register(RatingResponse, CustomRatingResponseAdmin)
+admin.site.register(Payment, CustomPaymentAdmin)
+admin.site.register(Image, CustomImageAdmin)
+admin.site.register(Cart, CustomCartAdmin)
+admin.site.register(Order, CustomOrderAdmin)
 admin.site.site_header = 'Admin Management'
