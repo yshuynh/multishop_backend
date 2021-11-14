@@ -171,13 +171,14 @@ class UserCartAddItemAPI(generics.GenericAPIView):
 
     def put(self, request, *arg, **kwargs):
         product_id = request.data.get('product')
+        count = int(request.data.get('count', 1))
         user_id = request.user.id
         try:
             c_cart = Cart.objects.get(product=product_id, user=user_id)
             data = {
                 'product': product_id,
                 'user': user_id,
-                'count': c_cart.count + 1
+                'count': c_cart.count + count
             }
             serializer = self.get_serializer(c_cart, data=data)
             if not serializer.is_valid():
@@ -187,7 +188,7 @@ class UserCartAddItemAPI(generics.GenericAPIView):
             data = {
                 'product': product_id,
                 'user': user_id,
-                'count': 1
+                'count': count
             }
             serializer = self.get_serializer(data=data)
             if not serializer.is_valid():
@@ -206,20 +207,21 @@ class UserCartRemoveItemAPI(generics.GenericAPIView):
 
     def put(self, request, *arg, **kwargs):
         product_id = request.data.get('product')
+        count = int(request.data.get('count', 1))
         user_id = request.user.id
         try:
             c_cart = Cart.objects.get(product=product_id, user=user_id)
             data = {
                 'product': product_id,
                 'user': user_id,
-                'count': c_cart.count - 1
+                'count': c_cart.count - count
             }
             serializer = self.get_serializer(c_cart, data=data)
             if not serializer.is_valid():
                 return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
             serializer.save()
             print(c_cart.count)
-            if c_cart.count == 0:
+            if c_cart.count <= 0:
                 c_cart.delete()
         except Cart.DoesNotExist:
             raise ClientException('Product does not exist in user cart.')
