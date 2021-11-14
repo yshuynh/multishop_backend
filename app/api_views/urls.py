@@ -12,6 +12,7 @@ urlpatterns = [
     path('payments', PaymentListAPI.as_view(), name='payment_list'),
     # path('single/<str:pk>', CategoryDetailAPI.as_view(), name='category_detail'),
     # path('<str:pk>', PostOfCategoryAPI.as_view(), name='store_search'),
+    path('orders', OrderListAPI.as_view(), name='user_order_list'),
 
     path('login', LoginAPI.as_view(), name='login'),
     path('refresh', RefreshTokenAPI.as_view(), name='refresh_token'),

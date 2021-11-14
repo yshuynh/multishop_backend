@@ -6,7 +6,7 @@ from app.models import Category, Product, Brand, Image, Cart, OrderItem, Order, 
 from app.models.rating import Rating, RatingResponse
 from app.models.user import User
 from app.utils import jwt_util, string_util
-from app.utils.constants import TOKEN_TYPE, ERROR_MESSAGE
+from app.utils.constants import TOKEN_TYPE, ERROR_MESSAGE, SHIPPING_FEE
 
 
 class LoginSerializer(serializers.ModelSerializer):
@@ -329,7 +329,7 @@ class UserCartSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Cart
-        fields = ('product', 'count', 'created_at', 'updated_at')
+        fields = ('id', 'product', 'count', 'created_at', 'updated_at')
 
 
 class UserCartAddSerializer(serializers.ModelSerializer):
@@ -363,17 +363,63 @@ class UserOrderSerializer(serializers.ModelSerializer):
         return serializer.data
 
 
-class UserOrderCreateSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Order
-        fields = '__all__'
-
-
 class OrderItemCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = OrderItem
         fields = '__all__'
+        extra_kwargs = {
+            'order_price': {'required': False},
+            'order': {'required': False}
+        }
 
+    def create(self, validated_data):
+        data = validated_data.copy()
+        data['order_price'] = data['product'].sale_price
+        instance = OrderItem.objects.create(**data)
+        return instance
+
+
+class UserOrderCreateSerializer(serializers.ModelSerializer):
+    items = OrderItemCreateSerializer(many=True)
+
+    class Meta:
+        model = Order
+        fields = '__all__'
+
+    # def __init__(self, instance=None, data=None, **kwargs):
+    #     super().__init__(instance, data, **kwargs)
+    #     self.items = None
+
+    # def to_internal_value(self, data):
+    #     data = data.copy()
+    #     data['']
+    #     return super(UserOrderCreateSerializer, self).to_internal_value(data)
+
+    def create(self, validated_data):
+        data_items = validated_data['items']
+        del validated_data['items']
+        instance = Order.objects.create(**validated_data)
+        sum_price = sum([e['product'].sale_price * e['count'] for e in data_items])
+        instance.sum_price = sum_price
+        instance.shipping_fee = SHIPPING_FEE
+        instance.total_cost = sum_price + SHIPPING_FEE
+        for e in data_items:
+            e['order'] = instance.id
+            e['product'] = e['product'].id
+        serializer_items = OrderItemCreateSerializer(data=data_items, many=True)
+        serializer_items.is_valid(raise_exception=True)
+        serializer_items.save()
+        instance.save()
+        return instance
+
+    # def to_representation(self, instance):
+    #     data = super(UserOrderCreateSerializer, self).to_representation(instance).copy()
+    #     print(data)
+    #     serializer = OrderItemSerializer(OrderItem.objects.filter(order=data['id']), many=True)
+    #     print(data)
+    #     print(serializer.data)
+    #     # data['items'] = serializer.data
+    #     return data
 
 class OrderItemSerializer(serializers.ModelSerializer):
     product = ProductSerializer()

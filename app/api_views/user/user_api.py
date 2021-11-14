@@ -5,7 +5,7 @@ from app.exceptions import ClientException
 from app.models import Cart, Order, Payment
 from app.models.rating import Rating
 from app.models.user import User
-from app.permissions import UserPermission, LoggedPermission
+from app.permissions import UserPermission, LoggedPermission, OwnerCartPermission
 from app.serializers import UserSerializer, UserInfoSerializer, UserRateProductSerializer, RatingResponseSerializer, \
     UserCartSerializer, UserCartAddSerializer, UserOrderSerializer, UserOrderCreateSerializer, OrderItemSerializer, \
     OrderItemCreateSerializer, PaymentSerializer
@@ -100,6 +100,32 @@ class UserCartListAPI(generics.GenericAPIView):
             }
             return Response(data)
         return Response(serializer.data)
+
+    def delete(self, request, *args, **kwargs):
+        list_cart_id = request.data
+        if type(list_cart_id) != list:
+            raise ClientException('Data must be a list of cart id.')
+        list_cart = self.get_queryset().filter(id__in=list_cart_id)
+        if len(list_cart_id) != len(list_cart):
+            raise ClientException('Invalid id list, there is a cart id not exist.')
+        list_cart.delete()
+        return Response(f'Deleted {list_cart_id} in cart.')
+
+
+class UserCartSingleAPI(generics.GenericAPIView):
+    queryset = Cart.objects
+    serializer_class = UserCartSerializer
+    authentication_classes = (JwtAuthentication,)
+    permission_classes = (UserPermission, OwnerCartPermission)
+
+    def get(self, request, pk, *arg, **kwargs):
+        serializer = self.get_serializer(self.get_object())
+        return Response(serializer.data)
+
+    def delete(self, request, pk, *args, **kwargs):
+        c_cart = self.get_object()
+        c_cart.delete()
+        return Response(f'Cart deleted.')
 
 
 class UserCartAddItemAPI(generics.GenericAPIView):
@@ -224,44 +250,66 @@ class UserOrderListAPI(generics.GenericAPIView):
         return Response(serializer.data)
 
     def post(self, request, *arg, **kwargs):
-        cart_list = Cart.objects.filter(user=request.user)
-        if len(cart_list) == 0:
-            raise ClientException("User's cart is empty.")
-        data = {
-            'user': request.user.id,
-            'payment': request.data.get('payment'),
-            'name': request.data.get('name'),
-            'address': request.data.get('address'),
-            'phone_number': request.data.get('phone_number')
-        }
+        # data = {
+        #     'user': request.user.id,
+        #     'payment': request.data.get('payment'),
+        #     'name': request.data.get('name'),
+        #     'address': request.data.get('address'),
+        #     'phone_number': request.data.get('phone_number')
+        # }
+        data = request.data.copy()
+        data['user'] = request.user.id
+        # list_data = []
+        # for e in data['items']:
+        #     new_data = data.copy()
+        #     new_data['items'] = [e]
+        #     list_data.append(new_data)
+        # print(list_data)
         serializer = self.get_serializer(data=data)
         serializer.is_valid(raise_exception=True)
-
         c_order = serializer.save()
-        o_list_serializer = []
-        for e in cart_list:
-            o_data = {
-                'product': e.product.id,
-                'count': e.count,
-                'order': c_order.id,
-                'order_price': e.product.sale_price
-            }
-            o_serializer = OrderItemCreateSerializer(data=o_data)
-            o_serializer.is_valid(raise_exception=True)
-            o_list_serializer.append(o_serializer)
-        for e in o_list_serializer:
-            e.save()
-        sum_price = sum([e.product.sale_price * e.count for e in cart_list])
-        # data = {
-        #     'sum_price': sum_price,
-        #     'shipping_fee': SHIPPING_FEE,
-        #     'total_cost': sum_price + SHIPPING_FEE
-        # }
-        c_order.sum_price = sum_price
-        c_order.shipping_fee = SHIPPING_FEE
-        c_order.total_cost = sum_price + SHIPPING_FEE
-        c_order.save()
-        for e in cart_list:
-            e.delete()
         serializer = UserOrderSerializer(c_order)
         return Response(serializer.data)
+
+    # def post(self, request, *arg, **kwargs):
+    #     cart_list = Cart.objects.filter(user=request.user)
+    #     if len(cart_list) == 0:
+    #         raise ClientException("User's cart is empty.")
+    #     data = {
+    #         'user': request.user.id,
+    #         'payment': request.data.get('payment'),
+    #         'name': request.data.get('name'),
+    #         'address': request.data.get('address'),
+    #         'phone_number': request.data.get('phone_number')
+    #     }
+    #     serializer = self.get_serializer(data=data)
+    #     serializer.is_valid(raise_exception=True)
+    #
+    #     c_order = serializer.save()
+    #     o_list_serializer = []
+    #     for e in cart_list:
+    #         o_data = {
+    #             'product': e.product.id,
+    #             'count': e.count,
+    #             'order': c_order.id,
+    #             'order_price': e.product.sale_price
+    #         }
+    #         o_serializer = OrderItemCreateSerializer(data=o_data)
+    #         o_serializer.is_valid(raise_exception=True)
+    #         o_list_serializer.append(o_serializer)
+    #     for e in o_list_serializer:
+    #         e.save()
+    #     sum_price = sum([e.product.sale_price * e.count for e in cart_list])
+    #     # data = {
+    #     #     'sum_price': sum_price,
+    #     #     'shipping_fee': SHIPPING_FEE,
+    #     #     'total_cost': sum_price + SHIPPING_FEE
+    #     # }
+    #     c_order.sum_price = sum_price
+    #     c_order.shipping_fee = SHIPPING_FEE
+    #     c_order.total_cost = sum_price + SHIPPING_FEE
+    #     c_order.save()
+    #     for e in cart_list:
+    #         e.delete()
+    #     serializer = UserOrderSerializer(c_order)
+    #     return Response(serializer.data)

@@ -148,8 +148,8 @@ class CustomOrderAdmin(admin.ModelAdmin):
     @display(description='Info')
     def info(self, obj):
         res = f'<p>{obj.name}</p>'
-        res += f'<p>{obj.name}</p>'
-        res += f'<p>{obj.name}</p>'
+        res += f'<p>{obj.phone_number}</p>'
+        res += f'<p>{obj.address}</p>'
         return mark_safe(res)
 
     @display(description='Items')

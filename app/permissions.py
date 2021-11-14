@@ -30,3 +30,8 @@ class LoggedPermission(permissions.BasePermission):
 
     def has_permission(self, request, view):
         return request.user != NONE_USER and request.user != AnonymousUser
+
+
+class OwnerCartPermission(permissions.BasePermission):
+    def has_object_permission(self, request, view, obj):
+        return obj.user == request.user

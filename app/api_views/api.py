@@ -3,12 +3,12 @@ from rest_framework.pagination import PageNumberPagination
 from rest_framework.response import Response
 
 from app.exceptions import ClientException
-from app.models import Category, Product, Brand, Payment
+from app.models import Category, Product, Brand, Payment, Order
 from app.models.rating import Rating
-from app.models.user import User
+from app.models.user import User, NONE_USER
 from app.serializers import CategoryFullSerializer, ProductSerializer, CategorySerializer, BrandSerializer, \
     BrandFullSerializer, LoginSerializer, RegisterSerializer, ProductDetailSerializer, ProductRatingsSerializer, \
-    RefreshTokenSerializer, PaymentSerializer
+    RefreshTokenSerializer, PaymentSerializer, UserOrderCreateSerializer, UserOrderSerializer
 from app.utils import string_util
 
 
@@ -152,4 +152,46 @@ class PaymentListAPI(generics.GenericAPIView):
 
     def get(self, request, *arg, **kwargs):
         serializer = self.get_serializer(self.get_queryset(), many=True)
+        return Response(serializer.data)
+
+
+class OrderListAPI(generics.GenericAPIView):
+    queryset = Order.objects
+    serializer_class = UserOrderCreateSerializer
+
+    # def get_serializer_class(self):
+    #     if self.request.method == 'GET':
+    #         return UserOrderSerializer
+    #     if self.request.method == 'POST':
+    #         return UserOrderCreateSerializer
+
+    # def get(self, request, *arg, **kwargs):
+    #     queryset = self.get_queryset().filter(user=request.user)
+    #     page = self.paginate_queryset(queryset)
+    #     if page is not None:
+    #         serializer = self.get_serializer(page, many=True)
+    #         return self.get_paginated_response(serializer.data)
+    #     serializer = self.get_serializer(self.get_queryset(), many=True)
+    #     return Response(serializer.data)
+
+    def post(self, request, *arg, **kwargs):
+        # data = {
+        #     'user': request.user.id,
+        #     'payment': request.data.get('payment'),
+        #     'name': request.data.get('name'),
+        #     'address': request.data.get('address'),
+        #     'phone_number': request.data.get('phone_number')
+        # }
+        data = request.data.copy()
+        data['user'] = None
+        # list_data = []
+        # for e in data['items']:
+        #     new_data = data.copy()
+        #     new_data['items'] = [e]
+        #     list_data.append(new_data)
+        # print(list_data)
+        serializer = self.get_serializer(data=data)
+        serializer.is_valid(raise_exception=True)
+        c_order = serializer.save()
+        serializer = UserOrderSerializer(c_order)
         return Response(serializer.data)

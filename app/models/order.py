@@ -5,7 +5,7 @@ from app.utils.constants import ORDER_STATUS
 
 class Order(models.Model):
     status = models.CharField(max_length=32, default=ORDER_STATUS.WAITING_CONFIRM, choices=ORDER_STATUS.choices())
-    user = models.ForeignKey('User', on_delete=models.CASCADE, related_name='orders')
+    user = models.ForeignKey('User', on_delete=models.CASCADE, related_name='orders', null=True)
     is_paid = models.BooleanField(default=False)
     payment = models.ForeignKey('Payment', on_delete=models.CASCADE, related_name='orders')
     name = models.CharField(max_length=64)
