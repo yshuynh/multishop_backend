@@ -219,7 +219,7 @@ class UserCartRemoveItemAPI(generics.GenericAPIView):
                 return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
             serializer.save()
             print(c_cart.count)
-            if c_cart.count == 1:
+            if c_cart.count == 0:
                 c_cart.delete()
         except Cart.DoesNotExist:
             raise ClientException('Product does not exist in user cart.')
