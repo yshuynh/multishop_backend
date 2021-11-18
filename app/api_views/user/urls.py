@@ -12,4 +12,5 @@ urlpatterns = [
     # path('carts/<str:pk>', UserCartItemSingleAPI.as_view(), name='user_cart_single'),
 
     path('orders', UserOrderListAPI.as_view(), name='user_order_list'),
+    path('orders/<str:pk>', UserOrderSingleAPI.as_view(), name='user_order_list'),
 ]

@@ -5,7 +5,7 @@ from app.exceptions import ClientException
 from app.models import Cart, Order, Payment
 from app.models.rating import Rating
 from app.models.user import User
-from app.permissions import UserPermission, LoggedPermission, OwnerCartPermission
+from app.permissions import UserPermission, LoggedPermission, OwnerCartPermission, OwnerOrderPermission
 from app.serializers import UserSerializer, UserInfoSerializer, UserRateProductSerializer, RatingResponseSerializer, \
     UserCartSerializer, UserCartAddSerializer, UserOrderSerializer, UserOrderCreateSerializer, OrderItemSerializer, \
     OrderItemCreateSerializer, PaymentSerializer
@@ -244,6 +244,9 @@ class UserOrderListAPI(generics.GenericAPIView):
 
     def get(self, request, *arg, **kwargs):
         queryset = self.get_queryset().filter(user=request.user)
+        status = request.query_params.get('status')
+        if status is not None:
+            queryset = queryset.filter(status=status)
         page = self.paginate_queryset(queryset)
         if page is not None:
             serializer = self.get_serializer(page, many=True)
@@ -315,3 +318,21 @@ class UserOrderListAPI(generics.GenericAPIView):
     #         e.delete()
     #     serializer = UserOrderSerializer(c_order)
     #     return Response(serializer.data)
+
+
+class UserOrderSingleAPI(generics.GenericAPIView):
+    queryset = Order.objects
+    # serializer_class = UserOrderSerializer
+    authentication_classes = (JwtAuthentication,)
+    permission_classes = (UserPermission, OwnerOrderPermission)
+
+    def get_serializer_class(self):
+        if self.request.method == 'GET':
+            return UserOrderSerializer
+        if self.request.method == 'POST':
+            return UserOrderCreateSerializer
+
+    def get(self, request, pk, *arg, **kwargs):
+        queryset = self.get_object()
+        serializer = self.get_serializer(queryset)
+        return Response(serializer.data)
