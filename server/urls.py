@@ -25,4 +25,5 @@ urlpatterns = [
     path('admin_login', AdminPageLoginAPI.as_view(), name="logout_api"),
     path('admin/', admin.site.urls),
     path('api/', include('app.api_views.urls')),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    path('', MainPageAPI.as_view(), name='main_page')
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

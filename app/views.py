@@ -6,11 +6,19 @@ from django.shortcuts import render
 
 # Create your views here.
 from rest_framework import generics
+from rest_framework.renderers import TemplateHTMLRenderer
 from rest_framework.response import Response
 
 from app.exceptions import ClientException
 from app.models import User
 from app.serializers import LoginSerializer
+
+
+class MainPageAPI(generics.GenericAPIView):
+    renderer_classes = [TemplateHTMLRenderer]
+
+    def get(self, request, *args, **kwargs):
+        return Response(template_name='index.html')
 
 
 class LogoutAPI(generics.GenericAPIView):
