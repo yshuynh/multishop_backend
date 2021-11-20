@@ -2,7 +2,7 @@ from audioop import reverse
 
 from django.contrib.auth import logout
 from django.http import HttpResponseRedirect
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 # Create your views here.
 from rest_framework import generics
@@ -19,8 +19,10 @@ class MainPageAPI(generics.GenericAPIView):
 
     def get(self, request, *args, **kwargs):
         print(request.get_full_path())
-        if request.get_full_path() == '/manifest.json':
-            return Response(template_name='manifest.json')
+        list_file = ['asset-manifest.json', 'favicon.ico', 'logo192.png', 'logo512.png', 'manifest.json', 'robots.txt']
+        file_name = request.get_full_path()[1:]
+        if file_name in list_file:
+            return redirect(f'static/public/{file_name}')
         return Response(template_name='index.html')
 
 
