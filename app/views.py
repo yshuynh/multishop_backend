@@ -18,8 +18,9 @@ class MainPageAPI(generics.GenericAPIView):
     renderer_classes = [TemplateHTMLRenderer]
 
     def get(self, request, *args, **kwargs):
-        if request.get_full_path() == 'manifest.json':
-            Response(template_name='manifest.json')
+        print(request.get_full_path())
+        if request.get_full_path() == '/manifest.json':
+            return Response(template_name='manifest.json')
         return Response(template_name='index.html')
 
 
