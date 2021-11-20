@@ -24,7 +24,7 @@ from server import settings
 urlpatterns = [
     path('admin/logout/', LogoutAPI.as_view(), name="logout_api"),
     path('admin_login', AdminPageLoginAPI.as_view(), name="logout_api"),
-    path('admin/', admin.site.urls),
+    path('admin', admin.site.urls),
     path('api/', include('app.api_views.urls')),
     path('', MainPageAPI.as_view(), name='main_page')
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) \
