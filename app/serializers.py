@@ -183,6 +183,15 @@ class ProductSerializer(serializers.ModelSerializer):
         return int(float((obj.price-obj.sale_price) / obj.price)*100)
 
 
+class ProductLiteSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Product
+        fields = ('id', 'name', 'name_latin')
+        extra_kwargs = {
+            'id': {'read_only': True}
+        }
+
+
 class ProductDetailSerializer(serializers.ModelSerializer):
     brand = BrandSerializer()
     ratings = serializers.SerializerMethodField()

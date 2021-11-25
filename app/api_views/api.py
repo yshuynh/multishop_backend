@@ -8,7 +8,7 @@ from app.models.rating import Rating
 from app.models.user import User, NONE_USER
 from app.serializers import CategoryFullSerializer, ProductSerializer, CategorySerializer, BrandSerializer, \
     BrandFullSerializer, LoginSerializer, RegisterSerializer, ProductDetailSerializer, ProductRatingsSerializer, \
-    RefreshTokenSerializer, PaymentSerializer, UserOrderCreateSerializer, UserOrderSerializer
+    RefreshTokenSerializer, PaymentSerializer, UserOrderCreateSerializer, UserOrderSerializer, ProductLiteSerializer
 from app.utils import string_util
 
 
@@ -78,13 +78,19 @@ class CategorySingleAPI(generics.GenericAPIView):
 
 class ProductListAPI(generics.GenericAPIView):
     queryset = Product.objects.all()
-    serializer_class = ProductSerializer
+    # serializer_class = ProductSerializer
+
+    def get_serializer_class(self):
+        if self.request.query_params.get('search_name') is not None:
+            return ProductLiteSerializer
+        return ProductSerializer
 
     def get(self, request, *arg, **kwargs):
         category_id = request.query_params.get('category')
         queryset = self.get_queryset()
         price_highest = request.query_params.get('price_highest')
         price_lowest = request.query_params.get('price_lowest')
+        search_name = request.query_params.get('search_name')
         if category_id is not None:
             queryset = queryset.filter(category=category_id)
         brand_id = request.query_params.get('brand')
@@ -94,7 +100,37 @@ class ProductListAPI(generics.GenericAPIView):
             queryset = queryset.filter(sale_price__lte=price_highest)
         if price_lowest is not None:
             queryset = queryset.filter(sale_price__gte=price_lowest)
+        if search_name is not None:
+            queryset = queryset.filter(name_latin__contains=search_name)
 
+        page = self.paginate_queryset(queryset)
+        if page is not None:
+            serializer = self.get_serializer(page, many=True)
+            return self.get_paginated_response(serializer.data)
+        serializer = self.get_serializer(self.get_queryset(), many=True)
+        return Response(serializer.data)
+
+
+class ProductSuggestionAPI(generics.GenericAPIView):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
+
+    def get(self, request, *arg, **kwargs):
+        queryset = self.get_queryset()
+        page = self.paginate_queryset(queryset)
+        if page is not None:
+            serializer = self.get_serializer(page, many=True)
+            return self.get_paginated_response(serializer.data)
+        serializer = self.get_serializer(self.get_queryset(), many=True)
+        return Response(serializer.data)
+
+
+class ProductBoughtSameUsersAPI(generics.GenericAPIView):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
+
+    def get(self, request, *arg, **kwargs):
+        queryset = self.get_queryset()
         page = self.paginate_queryset(queryset)
         if page is not None:
             serializer = self.get_serializer(page, many=True)
