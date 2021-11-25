@@ -78,12 +78,7 @@ class CategorySingleAPI(generics.GenericAPIView):
 
 class ProductListAPI(generics.GenericAPIView):
     queryset = Product.objects.all()
-    # serializer_class = ProductSerializer
-
-    def get_serializer_class(self):
-        if self.request.query_params.get('search_name') is not None:
-            return ProductLiteSerializer
-        return ProductSerializer
+    serializer_class = ProductSerializer
 
     def get(self, request, *arg, **kwargs):
         category_id = request.query_params.get('category')
@@ -102,6 +97,22 @@ class ProductListAPI(generics.GenericAPIView):
             queryset = queryset.filter(sale_price__gte=price_lowest)
         if search_name is not None:
             queryset = queryset.filter(name_latin__contains=search_name)
+
+        page = self.paginate_queryset(queryset)
+        if page is not None:
+            serializer = self.get_serializer(page, many=True)
+            return self.get_paginated_response(serializer.data)
+        serializer = self.get_serializer(self.get_queryset(), many=True)
+        return Response(serializer.data)
+
+
+class ProductLiteAPI(generics.GenericAPIView):
+    queryset = Product.objects.all()
+    serializer_class = ProductLiteSerializer
+
+    def get(self, request, *arg, **kwargs):
+        search_name = request.query_params.get('search_name', '')
+        queryset = self.get_queryset().filter(name_latin__contains=search_name)
 
         page = self.paginate_queryset(queryset)
         if page is not None:

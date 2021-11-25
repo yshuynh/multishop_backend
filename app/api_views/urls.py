@@ -5,6 +5,7 @@ urlpatterns = [
     path('categories', CategoryListAPI.as_view(), name='category_list'),
     path('categories/<str:pk>', CategorySingleAPI.as_view(), name='category_single'),
     path('products', ProductListAPI.as_view(), name='product_list'),
+    path('products/lite', ProductLiteAPI.as_view(), name='product_list'),
     path('products/suggestion', ProductSuggestionAPI.as_view(), name='product_list_suggestion'),
     path('products/bought_by_same_users', ProductBoughtSameUsersAPI.as_view(), name='product_list_bought_by_same_users'),
     path('products/<str:pk>', ProductSingleAPI.as_view(), name='product_single'),
