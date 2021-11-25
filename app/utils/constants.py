@@ -9,7 +9,7 @@ class BaseConstant:
 
     def next_state(self, state):
         list_value = [value for name, value in vars(self).items() if name.isupper()]
-        for i in range(0, len(list_value) - 1):
+        for i in range(0, 3):
             if list_value[i] == state:
                 return list_value[i + 1]
         return None
@@ -30,6 +30,7 @@ class ORDER_STATUS(BaseConstant):
     CONFIRMED = 'confirmed'
     SHIPPING = 'shipping'
     SUCCESS = 'success'
+    CANCEL = 'cancel'
 
 
 # class PAYMENT_TYPE(BaseConstant):
