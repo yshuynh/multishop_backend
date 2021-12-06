@@ -10,6 +10,7 @@ from app.serializers import CategoryFullSerializer, ProductSerializer, CategoryS
     BrandFullSerializer, LoginSerializer, RegisterSerializer, ProductDetailSerializer, ProductRatingsSerializer, \
     RefreshTokenSerializer, PaymentSerializer, UserOrderCreateSerializer, UserOrderSerializer, ProductLiteSerializer
 from app.utils import string_util
+from app.utils.string_util import convert_vietnamese_to_latin
 
 
 class LoginAPI(generics.GenericAPIView):
@@ -96,6 +97,7 @@ class ProductListAPI(generics.GenericAPIView):
         if price_lowest is not None:
             queryset = queryset.filter(sale_price__gte=price_lowest)
         if search_name is not None:
+            search_name = convert_vietnamese_to_latin(search_name)
             queryset = queryset.filter(name_latin__contains=search_name)
 
         page = self.paginate_queryset(queryset)
@@ -112,6 +114,7 @@ class ProductLiteAPI(generics.GenericAPIView):
 
     def get(self, request, *arg, **kwargs):
         search_name = request.query_params.get('search_name', '')
+        search_name = convert_vietnamese_to_latin(search_name)
         queryset = self.get_queryset().filter(name_latin__contains=search_name)
 
         page = self.paginate_queryset(queryset)
