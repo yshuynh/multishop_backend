@@ -3,6 +3,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 db.sqlite3
+media/uploads/
+static/ckeditor/
 
 # C extensions
 *.so
@@ -129,3 +131,5 @@ dmypy.json
 .pyre/
 .idea/
 rm all files
+
+venv39/

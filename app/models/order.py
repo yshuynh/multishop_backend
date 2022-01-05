@@ -1,5 +1,6 @@
 from django.db import models
 
+from app.utils import email_util
 from app.utils.constants import ORDER_STATUS
 
 
@@ -19,6 +20,27 @@ class Order(models.Model):
 
     class Meta:
         db_table = 'order'
+
+    def save(self, *args, **kwargs):
+        print('saving...')
+        if self.status != ORDER_STATUS.WAITING_CONFIRM:
+            data = {
+                'id': self.id,
+                'status': self.status,
+                'name': self.name,
+                'phone_number': self.phone_number,
+                'address': self.address,
+                'total_cost': self.total_cost,
+                'items': [],
+                'email': self.user.email
+            }
+            for item in self.items.all():
+                data['items'].append({
+                    'product':  {'name':item.product.name},
+                    'count': item.count
+                })
+            email_util.send_order_email(data)
+        super(Order, self).save(**kwargs)
 
 
 class OrderItem(models.Model):

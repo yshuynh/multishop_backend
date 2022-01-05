@@ -1,3 +1,4 @@
+from ckeditor_uploader.fields import RichTextUploadingField
 from django.db import models
 
 from app.utils.string_util import convert_vietnamese_to_latin
@@ -15,7 +16,7 @@ class Product(models.Model):
     category = models.ForeignKey('Category', on_delete=models.CASCADE, related_name='products')
     specifications = models.TextField()
     short_description = models.TextField()
-    description = models.TextField()
+    description = RichTextUploadingField()
     images = models.ManyToManyField('Image', related_name='products', blank=True)
 
     class Meta:

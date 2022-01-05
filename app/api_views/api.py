@@ -1,7 +1,9 @@
+from django.db.models import Avg
 from rest_framework import generics, status, exceptions
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.response import Response
 
+from app.authentication import JwtAuthentication
 from app.exceptions import ClientException
 from app.models import Category, Product, Brand, Payment, Order
 from app.models.rating import Rating
@@ -9,7 +11,7 @@ from app.models.user import User, NONE_USER
 from app.serializers import CategoryFullSerializer, ProductSerializer, CategorySerializer, BrandSerializer, \
     BrandFullSerializer, LoginSerializer, RegisterSerializer, ProductDetailSerializer, ProductRatingsSerializer, \
     RefreshTokenSerializer, PaymentSerializer, UserOrderCreateSerializer, UserOrderSerializer, ProductLiteSerializer
-from app.utils import string_util
+from app.utils import string_util, email_util
 from app.utils.string_util import convert_vietnamese_to_latin
 
 
@@ -29,7 +31,7 @@ class LoginAPI(generics.GenericAPIView):
             raise ClientException('User not found.')
         serializer = self.get_serializer(c_user)
         response = Response(serializer.data)
-        response.set_cookie('access_token', serializer.data.get('access_token'))
+        response.set_cookie('access_token', serializer.data.get('access_token').decode("utf-8"))
         return response
 
 
@@ -53,6 +55,7 @@ class RegisterAPI(generics.GenericAPIView):
         serializer = self.get_serializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
+            email_util.send_register_email(serializer.data)
             return Response(serializer.data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
@@ -130,7 +133,7 @@ class ProductSuggestionAPI(generics.GenericAPIView):
     serializer_class = ProductSerializer
 
     def get(self, request, *arg, **kwargs):
-        queryset = self.get_queryset()
+        queryset = self.get_queryset().annotate(average_stars=Avg('ratings__rate')).order_by('-average_stars')
         page = self.paginate_queryset(queryset)
         if page is not None:
             serializer = self.get_serializer(page, many=True)
@@ -156,6 +159,7 @@ class ProductBoughtSameUsersAPI(generics.GenericAPIView):
 class ProductSingleAPI(generics.GenericAPIView):
     queryset = Product.objects
     serializer_class = ProductDetailSerializer
+    authentication_classes = (JwtAuthentication,)
 
     def get(self, request, pk, *arg, **kwargs):
         c_product = self.get_object()

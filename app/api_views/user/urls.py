@@ -13,4 +13,5 @@ urlpatterns = [
 
     path('orders', UserOrderListAPI.as_view(), name='user_order_list'),
     path('orders/<str:pk>', UserOrderSingleAPI.as_view(), name='user_order_list'),
+    path('orders/<str:pk>/cancel', UserOrderCancelAPI.as_view(), name='user_order_list'),
 ]

@@ -1,12 +1,14 @@
 import jwt
 from django.contrib.auth.hashers import make_password
+from django.utils.datetime_safe import datetime
 from rest_framework import serializers, exceptions
 
+from app.exceptions import ClientException
 from app.models import Category, Product, Brand, Image, Cart, OrderItem, Order, Payment
 from app.models.rating import Rating, RatingResponse
 from app.models.user import User
 from app.utils import jwt_util, string_util
-from app.utils.constants import TOKEN_TYPE, ERROR_MESSAGE, SHIPPING_FEE
+from app.utils.constants import TOKEN_TYPE, ERROR_MESSAGE, SHIPPING_FEE, ORDER_STATUS
 
 
 class LoginSerializer(serializers.ModelSerializer):
@@ -186,7 +188,7 @@ class ProductSerializer(serializers.ModelSerializer):
 class ProductLiteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
-        fields = ('id', 'name', 'name_latin')
+        fields = ('id', 'name', 'name_latin', 'thumbnail')
         extra_kwargs = {
             'id': {'read_only': True}
         }
@@ -200,10 +202,12 @@ class ProductDetailSerializer(serializers.ModelSerializer):
     images = serializers.SerializerMethodField()
     specifications = SpecificationsSerializer()
     discount = serializers.SerializerMethodField()
+    is_buy = serializers.SerializerMethodField()
+    description = serializers.SerializerMethodField()
 
     class Meta:
         model = Product
-        fields = tuple([field.name for field in model._meta.fields if field.name not in ['price', 'sale_price']]) + ('price', 'sale_price', 'discount', 'avg_rating', 'brand', 'ratings', 'images')
+        fields = tuple([field.name for field in model._meta.fields if field.name not in ['price', 'sale_price']]) + ('is_buy', 'price', 'sale_price', 'discount', 'avg_rating', 'brand', 'ratings', 'images')
         extra_kwargs = {
             'id': {'read_only': True}
         }
@@ -224,6 +228,17 @@ class ProductDetailSerializer(serializers.ModelSerializer):
 
     def get_discount(self, obj):
         return int(float((obj.price-obj.sale_price) / obj.price)*100)
+
+    def get_is_buy(self, obj):
+        c_user = self.context.get('request').user
+        order_items = OrderItem.objects.filter(order__status=ORDER_STATUS.SUCCESS, order__user=c_user.id, product=obj.id)
+        return len(order_items) > 0
+
+    def get_description(self, obj):
+        img_style = self.context.get('request').query_params.get('img_style')
+        if img_style is None:
+            return obj.description
+        return obj.description.replace('<img', f'<img style="{img_style}"')
 
 
 class CategoryFullSerializer(serializers.ModelSerializer):
@@ -437,3 +452,23 @@ class OrderItemSerializer(serializers.ModelSerializer):
         model = OrderItem
         fields = ('count', 'order_price', 'product')
 
+
+class UserOrderCancelSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Order
+        fields = '__all__'
+
+    def to_internal_value(self, data):
+        return data
+
+    def update(self, instance, validated_data):
+        # print("hello")
+        delta_time = datetime.utcnow() - instance.created_at.replace(tzinfo=None)
+        # print(delta_time.seconds/60)
+        # if delta_time.seconds/60 > 60:
+        #     raise ClientException("It's been more than 60 minutes since you created the order. Please contact admin.")
+        if instance.status != ORDER_STATUS.WAITING_CONFIRM:
+            raise ClientException("Order has been processed and cannot be cancelled. Please contact admin.")
+        instance.status = ORDER_STATUS.CANCEL
+        instance.save()
+        return instance
